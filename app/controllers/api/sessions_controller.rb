@@ -1,6 +1,6 @@
-class Api::SessionController < ApplicationController
+class Api::SessionsController < ApplicationController
   def create
-    @user - User.find_by_credentials(
+    @user = User.find_by_credentials(
       params[:user][:email],
       params[:user][:password]
     )
@@ -17,9 +17,9 @@ class Api::SessionController < ApplicationController
     @user = current_user
     if @user
       logout
-      render "api/user/show"
+      render "api/users/show"
     else
-      render json: ["Never should've come here!"], status 404
+      render json: ["Never should've come here!"], status: 404
     end
   end
 end

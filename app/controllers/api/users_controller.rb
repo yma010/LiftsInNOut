@@ -17,8 +17,8 @@ class Api::UsersController < ApplicationController
   private
 
   def user_params
-    permits = %i[ fname lname email password ]
+    # permits = %i[ fname lname email password ]
 
-    params.require(:user).permit(*permits)
+    params.require(:user).permit(:fname, :lname, :email, :password)
   end
 end

@@ -9,8 +9,11 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
-    "redux-logger": "^3.0.6"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
@@ -19,9 +22,14 @@
     "lib": "lib",
     "test": "test"
   },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "start": "webpack --mode development -w",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "postinstall": "webpack"
   },
   "keywords": [],
   "author": "",
