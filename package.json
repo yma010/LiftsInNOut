@@ -29,7 +29,7 @@
   "scripts": {
     "start": "webpack --mode development -w",
     "build": "webpack --mode production",
-    "postinstall": "webpack"
+    "postinstall": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
