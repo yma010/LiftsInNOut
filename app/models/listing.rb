@@ -20,7 +20,7 @@
 
 class Listing < ApplicationRecord
   validates :name, :host_id, :latitude, :longitude, :price, :guests, :benches, :power_rack, :deadlift_platform, presence: true
-  validates :location, uniquness: true
+  validates :location, uniqueness: true
 
   belongs_to :host,
     primary_key: :id,
