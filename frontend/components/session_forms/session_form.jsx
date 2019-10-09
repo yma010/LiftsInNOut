@@ -1,21 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      fname: '',
-      lname: '',
-      email: '',
-      password: ''
+      fname: "",
+      lname: "",
+      email: "",
+      password: ""
     };
+
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this)
   }
 
   update(field) {
-    return e => this.setState({
-      [field]: e.currentTarget.value
-    });
+    return e => this.setState({ [field]: e.target.value });
   }
 
   handleSubmit(e) {
@@ -25,63 +26,81 @@ class SessionForm extends React.Component {
       .then(() => this.props.history.push(`/`));
   }
 
-  // renderErrors() {
-  //   return (
-  //     <ul>
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={`error-${i}`}>
-  //           {error}
-  //         </li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
+  handleDemo(e) {
+    e.preventDefault();
+    const demo_user = {email: `hunter2@gmail.com`, password: `hunter2`};
+    this.props.processForm(demo_user)
+      .then(() => this.props.history.push(`/`));
+  }
+
+  renderDemo() {
+    return this.props.formType === "Login" ? (
+      <input
+        className="demo-login"
+        onClick={this.handleDemo}
+        type="submit"
+        value="Demo Login"
+      />
+    ) : null
+  }
 
   render() {
     let link;
     let linkDesc;
-    let extraElement;
-
-    if (this.props.formType === 'signup'){
-      link = '/login'
-      linkDesc = "Login Here"
-    } else {
-      link = '/signup'
-      linkDesc = 'Sign Up Here'
-      extraElement = <div>
-        <label>First Name:
+    let sessionForm;
+      if(this.props.formType === "Sign Up") {
+       link = '/login'
+       linkDesc = "Login Here"
+        sessionForm = 
+        <section>
+          <label>First Name:
           <input type="text" onChange={this.update("fname")} />
-      </label>
-        <label>Last Name:
+          </label>
+          <label>Last Name:
           <input type="text" onChange={this.update("lname")} />
-        </label>
-      </div>
-    }
-    debugger;
-    let errors = this.props.errors.map((error, i) => 
-      <li key={i}>
-      {error}</li>);
-
-    return(
-      <form onSubmit={this.handleSubmit}>
-        <ul>
-          {errors}
-        </ul>
-
-        <header>
-          {this.props.formType}
-        </header>
-        <Link to={link}>{linkDesc}</Link>
-        {extraElement}
-        <label>Email:
+          </label>
+          <label>Email
           <input type="text" onChange={this.update("email")} />
-        </label>
-        <label>Password:
+          </label>
+          <label>Password
           <input type="password" onChange={this.update("password")} />
-        </label>
+          </label>
+          <button>Submit</button>
+        </section >
+      } else {
+        link = '/signup'
+        linkDesc = 'Sign Up Here'
+        sessionForm =
+        <section>
+          <label>Email
+          <input type="text" onChange={this.update("email")} />
+          </label>
+          <label>Password
+          <input type="password" onChange={this.update("password")} />
+          </label>
+          <button>Submit</button>
+        </section>
+      }
+
+    // debugger;
+    let errors = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>);
+
+    return (
+    <form onSubmit={this.handleSubmit}>
+        <ul>
+        {errors}
+        </ul>
+  
+      <header>{this.props.formType}</header>
+      <div>
+        <Link to={link}> {linkDesc}</Link>
+      </div>
+        {sessionForm}
+        {this.renderDemo()}
       </form>
-    );
+    )
   }
 }
+
 
 export default SessionForm;

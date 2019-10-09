@@ -21,7 +21,7 @@ const Greeting = ({ currentUser, logout }) => {
       <button className="header button" onClick={logout}>Log Out</button>
     </nav>
     <hgroup className="header">
-      <h2 className="header name">What can we help you find, {currentUser.username}!</h2>
+      <h2 className="header name">What can we help you find, {currentUser.fname}!</h2>
     </hgroup>
     </div >
   );
