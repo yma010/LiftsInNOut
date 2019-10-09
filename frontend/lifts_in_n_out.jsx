@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from "./store/store"
 import * as SessionsApi from './util/session_api_util';
+import * as SessionActions from './actions/session_actions';
 import Root from './components/root';
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -10,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () =>{
   ReactDOM.render(<Root store={store}/>, root);
   
   //ajax tests
-  window.login = SessionsApi.login;
-  window.signup = SessionsApi.signup;
-  window.logout = SessionsApi.logout;
+  // window.login = SessionActions.login;
+  // window.signup = SessionsApi.signup;
+  // window.logout = SessionsApi.logout;
   //
   window.getState = store.getState;
   window.dispatch = store.dispatch;

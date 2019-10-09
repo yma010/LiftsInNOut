@@ -5,7 +5,7 @@ import {
 import sessionErrorsReducer from "./session_errors_reducer";
 
 const errorsReducer = combineReducers({
-  session: sessionErrorsReducer
+  sessionErrors: sessionErrorsReducer
 });
 
 export default errorsReducer;
