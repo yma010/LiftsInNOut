@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # namespace :api, defaults: {format: JSON} do
   # end
   namespace :api, defaults: {format: :json} do
-    resource :listings, only: %i[ index show create update destroy ]
+    resource :listing, only: %i[ show index create update destroy ]
     resource :user, only: %i[ show create ]
     # Create generates a new user
     # Show will show Public User info
