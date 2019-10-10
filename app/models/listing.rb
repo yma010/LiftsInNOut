@@ -19,8 +19,11 @@
 #
 
 class Listing < ApplicationRecord
-  validates :name, :host_id, :latitude, :longitude, :price, :guests, :benches, :power_rack, :deadlift_platform, presence: true
-  validates :location, uniqueness: true
+  validates :name, :host_id, :latitude, :longitude, :price, :guests, presence: true
+  validates :benches, :power_rack, :deadlift_platform, presence: true
+  validates :location, uniqueness: true, presence: true
+
+  # has_many_attached :photos
 
   belongs_to :host,
     primary_key: :id,
