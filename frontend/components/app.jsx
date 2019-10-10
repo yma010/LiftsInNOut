@@ -10,6 +10,7 @@ const App = () => (
   <header className="navbar">
     <div className="nav-logo"></div>
     {/* PLACE HOLDER FOR SEARCH BAR */}
+    {/* SEARCH BAR GOES HERE */}
     <GreetingContainer />
   </header>
   <div className="modal">

@@ -90,8 +90,6 @@ class SessionForm extends React.Component {
         <ul>
           {errors}
         </ul>
-  
-      {/* <header>{this.props.formType}</header> */}
         {sessionForm}
       </form>
     )
