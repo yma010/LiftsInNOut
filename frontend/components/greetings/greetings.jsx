@@ -5,32 +5,28 @@ import { Link } from 'react-router-dom';
 
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
-    <div>
     <nav className="navBar">
-      <button> Become a Host </button>
-      <button> Help </button>
-      <Link to="/login">Login</Link>
-      <Link to="/signup">Sign up!</Link>
+      <button className="nav-button"> Become a Host </button>
+      <button className="nav-button"> Help </button>
+      <button id="open-button" className="nav-button">
+        <Link to="/signup">Sign up</Link>
+        </button>
+      <button id="open-button" className="nav-button">
+        <Link to="/login">Log In</Link>
+        </button>
     </nav>
-    <hgroup className="header">
-      <h2 className="header">Explore LiftsInNOut</h2>
-    </hgroup>
-    </div>
   );
   const personalGreeting = () => (
-    <div>
+  
     <nav className="navBar">
-      <button> Become a Host </button>
-      <button> Saved </button>
-      <button> Trips </button>
-      <button> Messages </button>
-      <button> Help </button>
-      <button className="header button" onClick={logout}>Log Out</button>
+      <button className="nav-button"> Become a Host </button>
+      <button className="nav-button"> Saved </button>
+      <button className="nav-button"> Trips </button>
+      <button className="nav-button"> Messages </button>
+      <button className="nav-button"> Help </button>
+      <button className="nav-button" onClick={logout}>Log Out</button>
     </nav>
-    <hgroup className="header">
-      <h2 className="header name">What can we help you find, {currentUser.fname}!</h2>
-    </hgroup>
-    </div >
+   
   );
 
   return currentUser ? personalGreeting() : sessionLinks();

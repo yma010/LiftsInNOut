@@ -1,9 +1,52 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-#header {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 70px  ;
+  background: white;
+  border-bottom: 1px solid #e4e4e4;
+  align-items: center;
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  position: relative;
+} nav {
+  height: inherit;
   display: flex;
   flex-direction: row;
-  align-items: center;
+}  
+.nav-button {
+    font-size: 14px;
+    border: none;
+    // padding-right: 23px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    height: inherit;
+    margin: 0;
+    text-align: center;
+    } a {
+      text-decoration: none;
+      color: #484848;
+      }
+    // button:last-of-type{
+    //   padding-right: 0;
+    // }
+    .nav-button:hover{
+      border-bottom: 2px solid #484848;
+      cursor: pointer;
+    }
+button {
+  cursor: pointer;
 }
+.nav-logo{
+  background-image: image_url("lifts_in_n_out_logo.png");
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+}
+

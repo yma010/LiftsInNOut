@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
           <label>Password
           <input type="password" onChange={this.update("password")} />
           </label>
-          <button>Submit</button>
+          <button>Submit</button> {this.renderDemo()}
         </section>
       }
 
@@ -86,17 +86,13 @@ class SessionForm extends React.Component {
     let errors = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>);
 
     return (
-    <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}>
         <ul>
-        {errors}
+          {errors}
         </ul>
   
-      <header>{this.props.formType}</header>
-      <div>
-        <Link to={link}> {linkDesc}</Link>
-      </div>
+      {/* <header>{this.props.formType}</header> */}
         {sessionForm}
-        {this.renderDemo()}
       </form>
     )
   }
