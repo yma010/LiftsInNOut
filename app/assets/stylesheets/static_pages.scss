@@ -1,10 +1,14 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+  box-sizing: border-box;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0px;
+  padding-bottom: 6px;
   padding-top: 5px;
   padding-left: 25px;
   padding-right: 25px;
@@ -23,23 +27,18 @@
 .nav-button {
     font-size: 14px;
     border: none;
-    // padding-right: 23px;
-    // padding-top: 10px;
-    // padding-bottom: 10px;
     height: inherit;
     margin: 0;
     text-align: center;
-    } a {
-      text-decoration: none;
-      color: #484848;
-      }
-    // button:last-of-type{
-    //   padding-right: 0;
-    // }
-    .nav-button:hover{
-      border-bottom: 2px solid #484848;
-      cursor: pointer;
-    }
+    text-decoration: none;
+    color: #484848;
+}
+
+.nav-button:hover{
+  padding-top: 2px;
+  border-bottom: 2px solid #484848;
+  cursor: pointer;
+  }
 button {
   cursor: pointer;
 }
