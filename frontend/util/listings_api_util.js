@@ -17,8 +17,8 @@ export const createListing = listing => (
     method: "POST",
     url: `api/listings/`,
     data: { listing },
-    contentType: false,
-    processData: false
+    // contentType: false,
+    // processData: false
   })
 );
 
@@ -26,8 +26,9 @@ export const updateListing = listing => (
   $.ajax({
     method: "PATCH",
     url: `api/listings/${listing.id}`, 
-    contentType: false,
-    processData: false
+    // contentType: false,
+    // processData: false
+    data: { listing }
   })
 )
 

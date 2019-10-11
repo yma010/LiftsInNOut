@@ -5,25 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create!(
-  fname: 'Hunter',
-  lname: 'Hunt',
-  email: 'hunter2@gmail.com',
-  password: 'hunter2`'
-)
 
-Listing.create!(
-  host_id: 1,
-  name: 'Blueprint Training Grounds',
-  description: 'Hardcore training facility located in Garden Grove',
-  location: "11258 Monarch St ste e, Garden Grove, CA 92841",
-  benches: 6,
-  power_rack: 6,
-  deadlift_platform: 4,
-  latitude: 33.799006,
-  longitude: -118.0082287,
-  price: 20,
-  guests: 4
-)
-
-
+# createListing({ name: "Barbell Brigade", description: "Big workout facility with equipment & machines for weightlifting, powerlifting & ower training.", location: "646 Gibbons St, Los Angeles, CA 90031", longitude: 34.066082, latitude: -118.2237428, price: 25.00, guests: 2, benches: 2, power_rack: 4, deadlift_platform: 4 })
+# createListing({ host_id: 1, name: "Blueprint Training Grounds", description: "Big workout facility with equipment & machines for weightlifting, powerlifting & ower training.", location: "11258 Monarch St ste e, Garden Grove, CA 92841", longitude: 33.799006, latitude: -118.0082287, price: 25.00, guests: 2, benches: 2, power_rack: 4, deadlift_platform: 4 })
+# createListing({ host_id: 1, name: "24 Hour Fitness", description: "Generic big box gym", location: "21560 Valley Blvd, City of Industry, CA 91789", longitude: 34.0245305, latitude: -117.8572563, price: 25.00, guests: 2, benches: 2, power_rack: 2, deadlift_platform: 0 })

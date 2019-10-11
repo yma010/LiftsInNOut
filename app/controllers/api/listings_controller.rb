@@ -30,7 +30,7 @@ class Api::ListingsController < ApplicationController
     @listing = Listing.find(params[:id])
 
     if @listing.update_attributes(listing_params)
-      redirect_to listing_url(@listing)
+      render :show
     else
       render json: @listing.full_messages, status: 422
     end
@@ -39,25 +39,14 @@ class Api::ListingsController < ApplicationController
   def destroy
     @listing = Listing.find(params[:id])
     @listing.destroy
-    redirect_to listings_url
+    render json: ['Listing removed']
   end
 
 
-  private_methods
+  private
 
   def listing_params
-    params.require(:listing).permit(
-      :name, 
-      :description, 
-      :location, 
-      :longitude, 
-      :latitude, 
-      :price,
-      :guests,
-      :benches,
-      :power_rack,
-      :deadlift_platform
-      )
+    params.require(:listing).permit(:host_id, :name, :description, :location, :longitude, :latitude, :price, :guests, :benches, :power_rack,:deadlift_platform)
   end
 
   def bounds

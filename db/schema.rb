@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_09_155547) do
+ActiveRecord::Schema.define(version: 2019_10_11_163831) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "listings", force: :cascade do |t|
-    t.string "host_id", null: false
     t.string "name", null: false
     t.string "description", null: false
     t.string "location", null: false
@@ -29,6 +28,7 @@ ActiveRecord::Schema.define(version: 2019_10_09_155547) do
     t.integer "deadlift_platform", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "host_id", null: false
     t.index ["host_id"], name: "index_listings_on_host_id"
     t.index ["location"], name: "index_listings_on_location", unique: true
   end
