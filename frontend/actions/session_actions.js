@@ -18,15 +18,10 @@ export const receiveErrors = errors => ({
   errors
 });
 
-export const login = user => dispatch => {
-  // debugger;
-  return (
-    ApiUtil.login(user)
-    .then(user => {
-      return (dispatch(receiveCurrentUser(user)))
-    }, error => dispatch(receiveErrors(error.responseJSON)))
-  )
-};
+export const login = user => dispatch => (
+  ApiUtil.login(user)
+  .then(user => (dispatch(receiveCurrentUser(user)))
+  , error => dispatch(receiveErrors(error.responseJSON))));
 
 export const logout = () => dispatch => (
   ApiUtil.logout()
@@ -35,6 +30,5 @@ export const logout = () => dispatch => (
 
 export const signup = (user) => dispatch => (
   ApiUtil.signup(user)
-  .then(user => dispatch(receiveCurrentUser(user)),
-    error => dispatch(receiveErrors(error.responseJSON)))
-);
+  .then(user => dispatch(receiveCurrentUser(user))
+  , error => dispatch(receiveErrors(error.responseJSON))));

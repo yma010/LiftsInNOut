@@ -5,8 +5,9 @@ import {
   Switch
 } from 'react-router-dom';
 
-import Modal from './modals/modal'
-import GreetingContainer from './greetings/greetings_container'
+import Modal from './modals/modal';
+import NavContainer from './nav/nav_container';
+import ListingsIndex from './listings/listings_index_container'; //where that container @ tho??
 // import LoginFormContainer from './session_forms/login_form_container';
 // import SignupFormContainer from './session_forms/signup_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
@@ -17,12 +18,15 @@ const App = () => (
     <header className="navbar">
       <div className="nav-logo"></div>
       {/* PLACE HOLDER FOR SEARCH BAR */}
-      <GreetingContainer />
+      <NavContainer />
     </header>
+    <main>
     <Switch>
+      <ListingsIndex />
       {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute  exact path="/signup" component={SignupFormContainer} /> */}
     </Switch>
+    </main>
   </div>
 );
 

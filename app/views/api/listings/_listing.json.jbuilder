@@ -1,1 +1,1 @@
-json.extract! listings, :id, :host_id, :name, :description, :location, :longitude, :price, :guests, :benches, :power_rack, :deadlift_platform
+json.extract! listing, :id, :host_id, :name, :description, :location, :longitude, :price, :guests, :benches, :power_rack, :deadlift_platform
