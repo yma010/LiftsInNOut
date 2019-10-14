@@ -3,8 +3,9 @@ export default class MarkerManager {
     this.map = map;
     this.markers = {};
   }
-
+  
   updateMarkers(listings){
+    debugger;
     listings.forEach(listing => {
       if (!Object.keys(this.markers).includes(listing.id)) {
         this.createMarker(listing);

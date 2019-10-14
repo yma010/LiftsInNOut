@@ -25,7 +25,7 @@ export const fetchListings = () => dispatch => (
   //.then(listings => dispatch(receiveAllListings(listings)))
 
 export const fetchListing = id => dispatch => {
-  debugger;
+  // debugger;
   return (ListingApiUtil.fetchListing(id)
     .then(listing => {
       return dispatch(receiveListing(listing));

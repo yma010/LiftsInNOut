@@ -9160,3 +9160,1159 @@ Processing by Api::ListingsController#index as JSON
 Completed 200 OK in 74ms (Views: 45.9ms | ActiveRecord: 26.2ms)
 
 
+Started GET "/" for ::1 at 2019-10-14 02:43:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 114ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 02:43:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (6.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (25.7ms)
+Completed 200 OK in 39ms (Views: 32.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 02:46:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 760ms (Views: 755.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 02:47:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 742ms (Views: 739.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 02:47:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (11.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (18.0ms)
+Completed 200 OK in 27ms (Views: 15.5ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:10:05 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 124ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 08:10:06 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (57.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (3.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (87.0ms)
+Completed 200 OK in 105ms (Views: 45.0ms | ActiveRecord: 57.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:11:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1116ms (Views: 1113.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:16:34 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 862ms (Views: 858.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:17:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 98ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 08:17:47 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (19.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (30.2ms)
+Completed 200 OK in 43ms (Views: 22.2ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:18:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 744ms (Views: 741.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 08:20:06 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (11.3ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:30:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 948ms (Views: 945.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:36:24 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 838ms (Views: 834.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:36:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 08:36:38 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (15.3ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 08:36:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 09:02:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 760ms (Views: 756.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 09:03:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 09:04:32 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 748ms (Views: 744.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 09:04:33 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (39.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (56.1ms)
+Completed 200 OK in 73ms (Views: 32.1ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:08:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 862ms (Views: 855.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:08:34 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 99ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 10:10:26 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (3.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (38.9ms)
+Completed 200 OK in 58ms (Views: 52.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:12:35 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1001ms (Views: 997.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:13:21 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 829ms (Views: 826.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:15:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 74ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:15:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 932ms (Views: 926.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 10:20:27 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (13.7ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:22:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 70ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:23:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 94ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 10:23:28 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (6.9ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-14 10:23:30 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (575.5ms)
+  Rendered api/listings/show.json.jbuilder (577.3ms)
+Completed 500 Internal Server Error in 654ms (ActiveRecord: 0.9ms)
+
+
+
+NameError - undefined local variable or method `listing' for #<#<Class:0x00007fe39d89a2f0>:0x00007fe39da49c18>
+Did you mean?  listings
+               @listing:
+  app/views/api/listings/_listing.json.jbuilder:1:in `_app_views_api_listings__listing_json_jbuilder__4467820298036452919_70307789526160'
+  app/views/api/listings/show.json.jbuilder:2:in `block in _app_views_api_listings_show_json_jbuilder___4525028844556758154_70307789558460'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder___4525028844556758154_70307789558460'
+
+Started GET "/" for ::1 at 2019-10-14 10:24:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:25:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:27:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 10:27:27 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (4.8ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:30:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-14 10:30:49 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (4.4ms)
+Completed 200 OK in 26ms (Views: 12.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:31:05 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 749ms (Views: 743.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:31:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 661ms (Views: 659.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:31:45 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 839ms (Views: 836.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-14 10:31:53 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (8.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (2.4ms)
+  Rendered api/listings/show.json.jbuilder (6.8ms)
+Completed 200 OK in 30ms (Views: 16.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:32:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 760ms (Views: 757.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-14 10:32:54 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (7.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/show.json.jbuilder (10.2ms)
+Completed 200 OK in 37ms (Views: 24.6ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:33:32 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 740ms (Views: 736.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-14 10:33:34 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (2.9ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:36:25 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 723ms (Views: 720.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:37:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 676ms (Views: 672.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:38:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 770ms (Views: 767.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:41:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 842ms (Views: 839.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:41:48 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 726ms (Views: 723.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:42:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 689ms (Views: 686.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:47:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 686ms (Views: 684.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:49:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1044ms (Views: 1040.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:50:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1131ms (Views: 1128.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 10:50:58 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/index.json.jbuilder (10.3ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:51:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 705ms (Views: 703.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:53:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 788ms (Views: 784.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:53:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 131ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 10:53:25 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/index.json.jbuilder (13.1ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:53:56 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:56:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 725ms (Views: 723.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 10:57:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 717ms (Views: 713.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 11:00:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 731ms (Views: 728.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 11:02:10 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 738ms (Views: 734.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 11:02:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 144ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 11:02:27 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (7.3ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 11:03:31 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 852ms (Views: 850.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 11:03:44 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (6.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 9ms (ActiveRecord: 6.9ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 11:03:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 379ms (Views: 376.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 11:12:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 756ms (Views: 753.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 11:13:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 85ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 11:13:36 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (8.6ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 11:13:51 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 8ms (ActiveRecord: 1.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:32:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:32:31 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (42.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 55ms (ActiveRecord: 44.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:32:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:33:08 -0700
+Started GET "/api/listings" for ::1 at 2019-10-14 12:33:09 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (37.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 42ms (ActiveRecord: 37.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (11.4ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:33:14 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 18ms (ActiveRecord: 3.9ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:33:16 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (7.3ms)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:33:19 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (17.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 21ms (ActiveRecord: 17.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:33:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (9.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:33:25 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 12ms (ActiveRecord: 2.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:35:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1277ms (Views: 1272.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:35:24 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 4ms (ActiveRecord: 1.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:35:29 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (18.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/index.json.jbuilder (25.9ms)
+Completed 200 OK in 38ms (Views: 18.6ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 12:35:34 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:35:34 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (17.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (28.0ms)
+Completed 200 OK in 39ms (Views: 21.3ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:35:37 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 3ms (ActiveRecord: 1.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:36:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 657ms (Views: 654.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:36:58 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:37:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 736ms (Views: 731.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:37:56 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (2.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 8ms (ActiveRecord: 2.9ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:38:18 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (12.5ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:38:27 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 4ms (ActiveRecord: 2.3ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:38:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:38:37 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (87.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 89ms (ActiveRecord: 87.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:38:40 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (7.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:38:41 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 2ms (ActiveRecord: 0.7ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:38:44 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (3.5ms)
+  Rendered api/listings/index.json.jbuilder (11.5ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:38:45 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 2ms (ActiveRecord: 0.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:38:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 816ms (Views: 812.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:38:55 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 3ms (ActiveRecord: 1.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:38:56 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (8.4ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 12:38:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:38:58 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (7.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (19.4ms)
+Completed 200 OK in 28ms (Views: 20.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:38:59 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:39:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 744ms (Views: 742.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:43:56 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (6.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 11ms (ActiveRecord: 6.0ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:43:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 792ms (Views: 788.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:43:59 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (8.6ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 12:44:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 767ms (Views: 761.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:44:10 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (5.7ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-14 12:44:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:44:42 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 19ms (ActiveRecord: 13.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:46:24 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 698ms (Views: 695.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:46:27 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 4ms (ActiveRecord: 1.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:46:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 780ms (Views: 777.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:46:52 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (14.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 17ms (ActiveRecord: 14.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:47:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 667ms (Views: 663.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:47:42 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 4ms (ActiveRecord: 1.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/api/listings" for ::1 at 2019-10-14 12:48:07 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (6.7ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:51:45 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (6.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 11ms (ActiveRecord: 6.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
+Started GET "/" for ::1 at 2019-10-14 12:51:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 67ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings/undefined" for ::1 at 2019-10-14 12:51:52 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mListing Load (25.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+Completed 404 Not Found in 72ms (ActiveRecord: 25.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:4:in `show'
+
