@@ -23,6 +23,7 @@ const listingReducer = (state = {}, action) => {
     delete newState[action.listingId];
     return newState;
   default:
+    debugger;
     return state;
   }
 };

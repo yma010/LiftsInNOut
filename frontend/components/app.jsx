@@ -9,8 +9,6 @@ import Modal from './modals/modal';
 import NavContainer from './nav/nav_container';
 import ListingsIndexContainer from './listings/listings_index_container'; //where that container @ tho??
 import ListingShowContainer from './listings/listings_show_container';
-// import LoginFormContainer from './session_forms/login_form_container';
-// import SignupFormContainer from './session_forms/signup_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
 const App = () => (
