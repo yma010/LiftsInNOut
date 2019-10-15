@@ -9,6 +9,7 @@ import Modal from './modals/modal';
 import NavContainer from './nav/nav_container';
 import ListingsIndexContainer from './listings/listings_index_container'; //where that container @ tho??
 import ListingShowContainer from './listings/listings_show_container';
+import SearchContainer from './search/search_container'
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 
 const App = () => (
@@ -21,7 +22,7 @@ const App = () => (
     </header>
     <main>
     <Switch>
-      <Route exact path="/listings" component={ListingsIndexContainer} />
+      <Route exact path="/listings" component={SearchContainer} />
       <Route path="/listings/:listingId" component={ListingShowContainer} />
       {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute  exact path="/signup" component={SignupFormContainer} /> */}

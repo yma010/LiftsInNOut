@@ -11,10 +11,8 @@ const listingReducer = (state = {}, action) => {
 
   switch (action.type) {
   case RECEIVE_ALL_LISTINGS:
-    // console.log(action.listings);
     return merge({}, state, action.listings);
   case RECEIVE_LISTING:
-    debugger;
     const anotherState = merge({}, state);
     anotherState[action.listing.id] = action.listing;
     return anotherState;
@@ -23,7 +21,6 @@ const listingReducer = (state = {}, action) => {
     delete newState[action.listingId];
     return newState;
   default:
-    debugger;
     return state;
   }
 };

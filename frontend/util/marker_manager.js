@@ -19,15 +19,15 @@ export default class MarkerManager {
       .forEach(newListing => this.createMarker(newListing));
   }
 
-  createMarker(listing){
-    const pos = new google.maps.LatLng(listing.latitude, listing.longitude)
+  createMarker(listings){
+    const pos = new google.maps.LatLng(listings.latitude, listings.longitude)
     
-    if (!this.markers[listing.id]) {
+    if (!this.markers[listings.id]) {
     const marker = new google.maps.Marker({
       position: pos, 
       map: this.map,
       label: {
-        text: `$${listing.price}`,
+        text: `$${listings.price}`,
         fontSize: '12px',
         fontWeight: 'bold',
         color: 'white'
@@ -43,11 +43,11 @@ export default class MarkerManager {
       }
     });
 
-    this.markers[listing.id] = marker;
-    let mapMarker = this.markersplisting.id;
+    this.markers[listings.id] = marker;
+    let mapMarker = this.markers[listings.id];
 
     mapMarker.addListener("click", () =>
-      this.handleMarkerClick(listing)
+      this.handleMarkerClick(listings)
     );
    }
   }

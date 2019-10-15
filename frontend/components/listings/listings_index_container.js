@@ -4,11 +4,9 @@ import {
   fetchListings,
 } from '../../actions/listings_action';
 
-const msp = state => {
-  return ({
-    listings: Object.values(state.entities.listings)
-  });
-};
+const msp = state => ({
+  listings: Object.values(state.entities.listings)
+});
 
 const mdp = dispatch => ({
   fetchListings: () => dispatch(fetchListings()),

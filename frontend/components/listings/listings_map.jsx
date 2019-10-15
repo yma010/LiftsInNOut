@@ -16,7 +16,9 @@ class ListingsMap extends React.Component {
 
   componentDidUpdate(prevProps){
     this.MarkerManager.updateMarkers(this.props.listings);
-
+    if (this.props.searchCoords !== prevProps.searchCoords) {
+      this.createMap();
+    }
   }
   
   componentWillUnmount(){
@@ -33,9 +35,6 @@ class ListingsMap extends React.Component {
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick);
     this.registerListeners();
-    console.log(this.props.listings)
-    console.log(this.props.listing)
-    console.log(this.props)
     this.MarkerManager.updateMarkers(this.props.listings);
 
   }

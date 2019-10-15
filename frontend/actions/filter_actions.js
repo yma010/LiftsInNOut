@@ -7,8 +7,7 @@ export const changeFilter = (filter, value) => ({
   value
 });
 
-export const updateFilter = (filter, value) => 
-  (dispatch, getState) => {
-    dispatch(changeFilter(filter, value));
-    return fetchListings(getState().ui.filters(dispatch));
+export const updateFilter = (filter, value) => (dispatch, getState) => {
+  dispatch(changeFilter(filter, value));
+  return fetchListings(getState().ui.filters)(dispatch);
 };
