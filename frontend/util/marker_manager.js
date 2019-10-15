@@ -24,9 +24,30 @@ export default class MarkerManager {
         fontSize: '12px',
         fontWeight: 'bold',
         color: 'white'
+      },
+      icon: {
+        url: `${window.marker}`,
+        scaledSize: new google.maps.Size(60, 40),
+        origin: new google.maps.Point(0, 0),
+        labelOrigin: new google.maps.Point(27, 19),
+        back
       }
     })
-    this.markers[listing.id] = marker;
+
+    google.maps.event.addListener(marker, "mouseover", () => {
+      const label = this.getLabel();
+      label.color = "#008489";
+      this.setLabel(label);
+    });
+
+    google.maps.event.addListener(marker, "mouseout", (e) => {
+      const label = this.getLabel();
+      label.color = "#484848";
+      this.setLabel(label);
+    });
+
+        this.markers[listing.id] = marker;
+
   }
 
 }
