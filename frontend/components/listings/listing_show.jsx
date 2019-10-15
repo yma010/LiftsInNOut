@@ -17,7 +17,6 @@ class ListingShow extends React.Component {
   componentDidUpdate(prevProps) {
     debugger;
     if (prevProps.listingId != this.props.match.params.listingId) {
-      debugger;
       this.props.fetchListing(this.props.listingId);
     }
   }

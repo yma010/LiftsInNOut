@@ -1,5 +1,4 @@
 import React from 'react';
-import ListingsMap from './map/listings_map';
 import ListingIndexItem from './listings_index_item';
 
 class ListingsIndex extends React.Component {
@@ -22,8 +21,6 @@ class ListingsIndex extends React.Component {
         <ul>
           {listingItems}
         </ul>
-        <div>
-        </div>
       </div>
     );
   }

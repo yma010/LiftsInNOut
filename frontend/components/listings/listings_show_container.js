@@ -3,7 +3,6 @@ import ListingShow from './listing_show';
 import { fetchListing, fetchListings } from '../../actions/listings_action';
 
 const msp = (state, ownProps) => {
-  debugger;
   const listingId = ownProps.match.params.listingId;
   const listing = state.entities.listings[listingId];
   
@@ -11,10 +10,8 @@ const msp = (state, ownProps) => {
 }
 
 const mdp = dispatch => {
-  // debugger;
   return {
     fetchListing: id => dispatch(fetchListing(id)),
-    fetchListings: () => dispatch(fetchListings())
   }
 }
 

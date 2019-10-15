@@ -2,52 +2,60 @@ export default class MarkerManager {
   constructor(map){
     this.map = map;
     this.markers = {};
+
+    this.handleMarkerClick = this.handleMarkerClick;
   }
   
   updateMarkers(listings){
-    debugger;
-    listings.forEach(listing => {
-      if (!Object.keys(this.markers).includes(listing.id)) {
-        this.createMarker(listing);
-      }
-    })
+    // debugger;
+    let listingsObj = {};
+    listings.forEach( listing => (listingsObj[listings.id] = listing));
+
+    listings
+      .filter(listing => !this.markers[listing.id])
+      .forEach(newListing => this.createMarker(newListing));
+    Object.keys(this.markers)
+      .filter(listing => !this.markers[listing.id])
+      .forEach(newListing => this.createMarker(newListing));
   }
 
   createMarker(listing){
     const pos = new google.maps.LatLng(listing.latitude, listing.longitude)
+    
+    if (!this.markers[listing.id]) {
     const marker = new google.maps.Marker({
-      pos, 
+      position: pos, 
       map: this.map,
-      listingId: listing.id,
       label: {
         text: `$${listing.price}`,
         fontSize: '12px',
         fontWeight: 'bold',
         color: 'white'
-      },
+      }, 
       icon: {
-        url: `${window.marker}`,
-        scaledSize: new google.maps.Size(60, 40),
-        origin: new google.maps.Point(0, 0),
-        labelOrigin: new google.maps.Point(27, 19),
-        back
+        path: 'M24-8c0 4.4-3.6 8-8 8h-32c-4.4 0-8-3.6-8-8v-32c0-4.4 3.6-8 8-8h32c4.4 0 8 3.6 8 8v32z',
+        labelOrigin: new google.maps.Point(0, -18),
+        fillColor: "white",
+        fillOpacity: 1,
+        scale: 1.15,
+        strokeColor: "484848",
+        strokeWeight: 0.3
       }
-    })
-
-    google.maps.event.addListener(marker, "mouseover", () => {
-      const label = this.getLabel();
-      label.color = "#008489";
-      this.setLabel(label);
     });
 
-    google.maps.event.addListener(marker, "mouseout", (e) => {
-      const label = this.getLabel();
-      label.color = "#484848";
-      this.setLabel(label);
-    });
+    this.markers[listing.id] = marker;
+    let mapMarker = this.markersplisting.id;
 
-        this.markers[listing.id] = marker;
-
+    mapMarker.addListener("click", () =>
+      this.handleMarkerClick(listing)
+    );
+   }
   }
 
+  removeMarker(marker) {
+    if (this.markers[marker.id]) {
+      this.markers[marker.id].setMap(null);
+      delete this.markers[marker.id];
+    }
+  }
 }

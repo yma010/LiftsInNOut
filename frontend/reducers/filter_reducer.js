@@ -3,7 +3,6 @@ import { merge } from 'lodash';
 
 const defaultFilters = Object.freeze({
   bounds: {},
-  dates: {}
 })
 
 const filterReducer = (state = defaultFilters, action) => {
@@ -11,9 +10,10 @@ const filterReducer = (state = defaultFilters, action) => {
 
   switch (action.type){
   case UPDATE_FILTER: {
-    const newState = merge({}, state);
-    newState[action.filter] = action.value;
-    return newState;
+    const newFilter = merge({}, state);
+    
+    newFilter[action.filter] = action.value;
+    return newFilter;
   }
   default: {
     return state;

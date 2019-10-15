@@ -12,6 +12,7 @@ const msp = state => {
 
 const mdp = dispatch => ({
   fetchListings: () => dispatch(fetchListings()),
+  fetchListing: id => dispatch(fetchListing(id))
 });
 
 export default connect(
