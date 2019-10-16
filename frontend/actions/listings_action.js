@@ -19,18 +19,15 @@ const removeListing = listingId => ({
   listingId
 });
 
-export const fetchListings = () => dispatch => (
-  ListingApiUtil.fetchListings()
+export const fetchListings = (filters) => dispatch => (
+  ListingApiUtil.fetchListings(filters)
   .then((listings) => dispatch(receiveAllListings(listings))));
   //.then(listings => dispatch(receiveAllListings(listings)))
 
-export const fetchListing = id => dispatch => {
-  // debugger;
-  return (ListingApiUtil.fetchListing(id)
-    .then(listing => {
-      return dispatch(receiveListing(listing));
-    }));
-};
+export const fetchListing = id => dispatch => (ListingApiUtil.fetchListing(id)
+  .then(listing => {
+    return dispatch(receiveListing(listing));
+  }));
 
 export const createListing = listing => dispatch => (
   ListingApiUtil.createListing(listing)

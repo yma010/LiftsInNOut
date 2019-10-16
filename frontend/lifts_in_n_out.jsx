@@ -5,7 +5,7 @@ import Root from './components/root';
 
 // import * as SessionsApi from './util/session_api_util';
 import * as SessionActions from './actions/session_actions';
-// import * as ListingsAPI from './util/listings_api_util';
+import * as ListingsAPI from './util/listings_api_util';
 import * as ListingActions from './actions/listings_action';
 
 document.addEventListener("DOMContentLoaded", () =>{
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () =>{
   // window.fetchListingAJX = ListingsAPI.fetchListing;
   // window.fetchListingsAJX = ListingsAPI.fetchListings;
   // window.createListing = ListingsAPI.createListing;
-  // window.updateListing = ListingsAPI.updateListing;
+  window.updateListing = ListingsAPI.updateListing;
   // window.deleteListing = ListingsAPI.deleteListing;
 
   window.fetchListings = ListingActions.fetchListings

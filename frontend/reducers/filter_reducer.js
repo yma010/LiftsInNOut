@@ -9,12 +9,12 @@ const filterReducer = (state = defaultFilters, action) => {
   Object.freeze;
 
   switch (action.type){
-  case UPDATE_FILTER: {
+  case UPDATE_FILTER:
+     
     const newFilter = merge({}, state);
     
     newFilter[action.filter] = action.value;
     return newFilter;
-  }
   default: {
     return state;
   }

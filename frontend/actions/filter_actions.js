@@ -1,4 +1,4 @@
-import { fetchListings } from '../util/listings_api_util';
+import { fetchListings } from '../actions/listings_action';
 export const UPDATE_FILTER = 'UPDATE_FILTER';
 
 export const changeFilter = (filter, value) => ({

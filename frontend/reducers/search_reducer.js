@@ -2,8 +2,8 @@ import { UPDATE_SEARCH } from '../actions/search_actions';
 
 const defaultState = {
   coords: {
-    latitude: 34.0522,
-    longitude: 118.2437
+    lat: 34.0522,
+    lng: -118.2437
   }
 };
 

@@ -11869,3 +11869,2676 @@ Processing by Api::ListingsController#index as JSON
 Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-15 13:28:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 82ms (Views: 73.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:28:27 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (9.7ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:28:28 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (6.0ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:33:55 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (5.7ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:33:57 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (4.5ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:34:02 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (4.8ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 13:42:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 713ms (Views: 709.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:42:17 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (9.8ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:42:17 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (15.3ms)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:49:40 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (5.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (14.3ms)
+Completed 200 OK in 24ms (Views: 18.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:49:40 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (36.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (43.6ms)
+Completed 200 OK in 56ms (Views: 19.4ms | ActiveRecord: 36.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:49:42 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (41.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (48.6ms)
+Completed 200 OK in 61ms (Views: 19.6ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:49:43 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (29.1ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:49:44 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (7.8ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 13:58:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 958ms (Views: 948.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 13:59:00 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 766ms (Views: 762.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:59:01 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (9.6ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 13:59:02 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (9.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (15.7ms)
+Completed 200 OK in 25ms (Views: 14.8ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 14:02:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 3300ms (Views: 3288.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 14:02:34 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (14.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/index.json.jbuilder (25.3ms)
+Completed 200 OK in 40ms (Views: 24.3ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 14:09:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 2963ms (Views: 2945.3ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 14:09:23 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (4.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (19.0ms)
+Completed 200 OK in 46ms (Views: 41.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 14:09:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 1393ms (Views: 1383.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 14:09:44 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (147.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (155.7ms)
+Completed 200 OK in 168ms (Views: 20.1ms | ActiveRecord: 147.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=118.58702275390624&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=117.90037724609374" for ::1 at 2019-10-15 14:09:45 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"118.58702275390624"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"117.90037724609374"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (17.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (25.1ms)
+Completed 200 OK in 43ms (Views: 23.4ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 14:59:05 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 14:59:06 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (64.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (94.5ms)
+Completed 200 OK in 123ms (Views: 57.8ms | ActiveRecord: 64.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=118.58702275390624&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=117.90037724609374" for ::1 at 2019-10-15 14:59:06 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"118.58702275390624"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"117.90037724609374"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (9.7ms)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:13:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:13:20 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (7.9ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=118.58702275390624&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=117.90037724609374" for ::1 at 2019-10-15 15:13:20 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"118.58702275390624"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"117.90037724609374"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.9ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:15:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 778ms (Views: 772.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:15:12 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/index.json.jbuilder (10.8ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:15:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 1092ms (Views: 1087.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:15:58 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (55.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (61.3ms)
+Completed 200 OK in 69ms (Views: 13.6ms | ActiveRecord: 55.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:17:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 998ms (Views: 992.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:17:03 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (54.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (83.6ms)
+Completed 200 OK in 95ms (Views: 40.2ms | ActiveRecord: 54.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:18:32 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 776ms (Views: 772.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:19:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 74ms (Views: 66.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:19:28 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (7.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (15.6ms)
+Completed 200 OK in 24ms (Views: 16.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:19:28 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (10.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (13.1ms)
+Completed 200 OK in 26ms (Views: 14.7ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.19544272812037&bounds%5BnorthEast%5D%5Blng%5D=-118.04319951171874&bounds%5BsouthWest%5D%5Blat%5D=33.91099426907159&bounds%5BsouthWest%5D%5Blng%5D=-118.38652226562499" for ::1 at 2019-10-15 15:19:36 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.19544272812037", "lng"=>"-118.04319951171874"}, "southWest"=>{"lat"=>"33.91099426907159", "lng"=>"-118.38652226562499"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (22.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (24.5ms)
+Completed 200 OK in 33ms (Views: 9.5ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.124988538563315&bounds%5BnorthEast%5D%5Blng%5D=-118.11461064453124&bounds%5BsouthWest%5D%5Blat%5D=33.98276520396693&bounds%5BsouthWest%5D%5Blng%5D=-118.28627202148436" for ::1 at 2019-10-15 15:19:37 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.124988538563315", "lng"=>"-118.11461064453124"}, "southWest"=>{"lat"=>"33.98276520396693", "lng"=>"-118.28627202148436"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.7ms)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.10552952522183&bounds%5BnorthEast%5D%5Blng%5D=-118.1448880904257&bounds%5BsouthWest%5D%5Blat%5D=33.963273524892124&bounds%5BsouthWest%5D%5Blng%5D=-118.31654946737882" for ::1 at 2019-10-15 15:19:45 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.10552952522183", "lng"=>"-118.1448880904257"}, "southWest"=>{"lat"=>"33.963273524892124", "lng"=>"-118.31654946737882"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.8ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:20:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 739ms (Views: 736.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:20:35 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/index.json.jbuilder (10.2ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:21:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 769ms (Views: 766.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:22:02 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 809ms (Views: 804.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:22:10 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (14.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (23.2ms)
+Completed 200 OK in 38ms (Views: 23.1ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:22:10 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (10.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (14.9ms)
+Completed 200 OK in 27ms (Views: 15.8ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.40645216366179&bounds%5BnorthEast%5D%5Blng%5D=-117.92784306640624&bounds%5BsouthWest%5D%5Blat%5D=33.83802217716839&bounds%5BsouthWest%5D%5Blng%5D=-118.61448857421874" for ::1 at 2019-10-15 15:22:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.40645216366179", "lng"=>"-117.92784306640624"}, "southWest"=>{"lat"=>"33.83802217716839", "lng"=>"-118.61448857421874"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.2ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.32674220389467&bounds%5BnorthEast%5D%5Blng%5D=-117.83949779315566&bounds%5BsouthWest%5D%5Blat%5D=33.75777510162418&bounds%5BsouthWest%5D%5Blng%5D=-118.52614330096816" for ::1 at 2019-10-15 15:22:33 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.32674220389467", "lng"=>"-117.83949779315566"}, "southWest"=>{"lat"=>"33.75777510162418", "lng"=>"-118.52614330096816"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.2ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.25421779023453&bounds%5BnorthEast%5D%5Blng%5D=-117.67988367914802&bounds%5BsouthWest%5D%5Blat%5D=33.684762957543334&bounds%5BsouthWest%5D%5Blng%5D=-118.36652918696052" for ::1 at 2019-10-15 15:22:37 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.25421779023453", "lng"=>"-117.67988367914802"}, "southWest"=>{"lat"=>"33.684762957543334", "lng"=>"-118.36652918696052"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.5ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.595837112482734&bounds%5BnorthEast%5D%5Blng%5D=-117.25253226684345&bounds%5BsouthWest%5D%5Blat%5D=33.021996889343306&bounds%5BsouthWest%5D%5Blng%5D=-117.93917777465595" for ::1 at 2019-10-15 15:22:41 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.595837112482734", "lng"=>"-117.25253226684345"}, "southWest"=>{"lat"=>"33.021996889343306", "lng"=>"-117.93917777465595"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.3ms)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.73644963356437&bounds%5BnorthEast%5D%5Blng%5D=-117.31092504161631&bounds%5BsouthWest%5D%5Blat%5D=33.16353960557649&bounds%5BsouthWest%5D%5Blng%5D=-117.99757054942881" for ::1 at 2019-10-15 15:22:42 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.73644963356437", "lng"=>"-117.31092504161631"}, "southWest"=>{"lat"=>"33.16353960557649", "lng"=>"-117.99757054942881"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (8.3ms)
+Completed 200 OK in 20ms (Views: 12.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.109945040606654&bounds%5BnorthEast%5D%5Blng%5D=-117.5690992564455&bounds%5BsouthWest%5D%5Blat%5D=33.53952270724123&bounds%5BsouthWest%5D%5Blng%5D=-118.255744764258" for ::1 at 2019-10-15 15:22:44 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.109945040606654", "lng"=>"-117.5690992564455"}, "southWest"=>{"lat"=>"33.53952270724123", "lng"=>"-118.255744764258"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.6ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:29:35 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 895ms (Views: 890.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:29:37 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (129.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (137.1ms)
+Completed 200 OK in 145ms (Views: 15.8ms | ActiveRecord: 129.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:29:37 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.1ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:30:07 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (2.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 989ms (Views: 982.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:30:09 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (8.4ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:30:09 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.4ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:30:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1087ms (Views: 1084.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:30:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (8.9ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:30:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.0ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:31:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 63ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:31:40 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (60.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (69.4ms)
+Completed 200 OK in 78ms (Views: 16.9ms | ActiveRecord: 60.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:31:41 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.3ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:32:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (2.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:32:14 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (6.0ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:32:15 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.5ms)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:32:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1099ms (Views: 1095.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:32:39 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (5.3ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:32:40 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (7.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (9.4ms)
+Completed 200 OK in 26ms (Views: 15.7ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.19430683675479&bounds%5BnorthEast%5D%5Blng%5D=-118.07203862304686&bounds%5BsouthWest%5D%5Blat%5D=33.90985456003305&bounds%5BsouthWest%5D%5Blng%5D=-118.41536137695311" for ::1 at 2019-10-15 15:33:00 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.19430683675479", "lng"=>"-118.07203862304686"}, "southWest"=>{"lat"=>"33.90985456003305", "lng"=>"-118.41536137695311"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (32.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (33.7ms)
+Completed 200 OK in 47ms (Views: 14.1ms | ActiveRecord: 32.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.123283273482556&bounds%5BnorthEast%5D%5Blng%5D=-118.15786931152343&bounds%5BsouthWest%5D%5Blat%5D=33.98105707561003&bounds%5BsouthWest%5D%5Blng%5D=-118.32953068847655" for ::1 at 2019-10-15 15:33:00 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.123283273482556", "lng"=>"-118.15786931152343"}, "southWest"=>{"lat"=>"33.98105707561003", "lng"=>"-118.32953068847655"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.4ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.10395453240188&bounds%5BnorthEast%5D%5Blng%5D=-118.12245313270313&bounds%5BsouthWest%5D%5Blat%5D=33.96169588886034&bounds%5BsouthWest%5D%5Blng%5D=-118.29411450965625" for ::1 at 2019-10-15 15:33:02 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.10395453240188", "lng"=>"-118.12245313270313"}, "southWest"=>{"lat"=>"33.96169588886034", "lng"=>"-118.29411450965625"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (8.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (12.3ms)
+Completed 200 OK in 19ms (Views: 10.0ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.17499434269898&bounds%5BnorthEast%5D%5Blng%5D=-118.03662244422657&bounds%5BsouthWest%5D%5Blat%5D=33.89047717486639&bounds%5BsouthWest%5D%5Blng%5D=-118.37994519813282" for ::1 at 2019-10-15 15:33:04 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.17499434269898", "lng"=>"-118.03662244422657"}, "southWest"=>{"lat"=>"33.89047717486639", "lng"=>"-118.37994519813282"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (8.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (11.8ms)
+Completed 200 OK in 29ms (Views: 19.3ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:34:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 1080ms (Views: 1075.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:34:54 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/index.json.jbuilder (7.4ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:34:54 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.7ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:36:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 1006ms (Views: 1003.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:36:35 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (3.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (11.8ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:36:35 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.0ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 15:39:11 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 982ms (Views: 979.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 15:39:13 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (32.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (40.1ms)
+Completed 200 OK in 51ms (Views: 18.1ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 15:39:14 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.5ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:31:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 114ms (Views: 109.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:31:51 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (87.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (97.5ms)
+Completed 200 OK in 112ms (Views: 23.5ms | ActiveRecord: 87.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 16:31:52 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.8ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:32:00 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1132ms (Views: 1127.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:32:02 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (13.6ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.061088672564516&bounds%5BnorthEast%5D%5Blng%5D=-118.23297116394042&bounds%5BsouthWest%5D%5Blat%5D=34.04331039538954&bounds%5BsouthWest%5D%5Blng%5D=-118.25442883605956" for ::1 at 2019-10-15 16:32:03 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.061088672564516", "lng"=>"-118.23297116394042"}, "southWest"=>{"lat"=>"34.04331039538954", "lng"=>"-118.25442883605956"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.4ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.06997641296686&bounds%5BnorthEast%5D%5Blng%5D=-118.22224232788085&bounds%5BsouthWest%5D%5Blat%5D=34.03441985884939&bounds%5BsouthWest%5D%5Blng%5D=-118.26515767211913" for ::1 at 2019-10-15 16:32:12 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.06997641296686", "lng"=>"-118.22224232788085"}, "southWest"=>{"lat"=>"34.03441985884939", "lng"=>"-118.26515767211913"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.9ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.07893431179674&bounds%5BnorthEast%5D%5Blng%5D=-118.19263074035644&bounds%5BsouthWest%5D%5Blat%5D=34.043381515924494&bounds%5BsouthWest%5D%5Blng%5D=-118.23554608459472" for ::1 at 2019-10-15 16:32:17 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.07893431179674", "lng"=>"-118.19263074035644"}, "southWest"=>{"lat"=>"34.043381515924494", "lng"=>"-118.23554608459472"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (13.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (15.4ms)
+Completed 200 OK in 26ms (Views: 11.4ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.06997641296689&bounds%5BnorthEast%5D%5Blng%5D=-118.2019004547119&bounds%5BsouthWest%5D%5Blat%5D=34.03441985884939&bounds%5BsouthWest%5D%5Blng%5D=-118.24481579895019" for ::1 at 2019-10-15 16:32:19 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.06997641296689", "lng"=>"-118.2019004547119"}, "southWest"=>{"lat"=>"34.03441985884939", "lng"=>"-118.24481579895019"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (12.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (19.8ms)
+Completed 200 OK in 30ms (Views: 16.6ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08696717717479&bounds%5BnorthEast%5D%5Blng%5D=-118.1821593963623&bounds%5BsouthWest%5D%5Blat%5D=34.05141775219375&bounds%5BsouthWest%5D%5Blng%5D=-118.22507474060058" for ::1 at 2019-10-15 16:32:28 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08696717717479", "lng"=>"-118.1821593963623"}, "southWest"=>{"lat"=>"34.05141775219375", "lng"=>"-118.22507474060058"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (10.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (12.0ms)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.10473629512987&bounds%5BnorthEast%5D%5Blng%5D=-118.16070172424315&bounds%5BsouthWest%5D%5Blat%5D=34.03363744702441&bounds%5BsouthWest%5D%5Blng%5D=-118.24653241271972" for ::1 at 2019-10-15 16:32:29 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.10473629512987", "lng"=>"-118.16070172424315"}, "southWest"=>{"lat"=>"34.03363744702441", "lng"=>"-118.24653241271972"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (124.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (127.8ms)
+Completed 200 OK in 142ms (Views: 17.3ms | ActiveRecord: 124.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.04928431240104&bounds%5BnorthEast%5D%5Blng%5D=-118.1191596710205&bounds%5BsouthWest%5D%5Blat%5D=33.978138943595475&bounds%5BsouthWest%5D%5Blng%5D=-118.20499035949706" for ::1 at 2019-10-15 16:32:38 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.04928431240104", "lng"=>"-118.1191596710205"}, "southWest"=>{"lat"=>"33.978138943595475", "lng"=>"-118.20499035949706"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (28.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (31.2ms)
+Completed 200 OK in 49ms (Views: 19.5ms | ActiveRecord: 28.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08597199627205&bounds%5BnorthEast%5D%5Blng%5D=-118.14799878234862&bounds%5BsouthWest%5D%5Blat%5D=34.01485739864232&bounds%5BsouthWest%5D%5Blng%5D=-118.23382947082519" for ::1 at 2019-10-15 16:32:42 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08597199627205", "lng"=>"-118.14799878234862"}, "southWest"=>{"lat"=>"34.01485739864232", "lng"=>"-118.23382947082519"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (9.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (12.1ms)
+Completed 200 OK in 31ms (Views: 20.6ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.068198939464956&bounds%5BnorthEast%5D%5Blng%5D=-118.16945645446776&bounds%5BsouthWest%5D%5Blat%5D=34.032641639720055&bounds%5BsouthWest%5D%5Blng%5D=-118.21237179870604" for ::1 at 2019-10-15 16:32:43 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.068198939464956", "lng"=>"-118.16945645446776"}, "southWest"=>{"lat"=>"34.032641639720055", "lng"=>"-118.21237179870604"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.0ms)
+Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.06973785531382&bounds%5BnorthEast%5D%5Blng%5D=-118.17816543842747&bounds%5BsouthWest%5D%5Blat%5D=34.034181201122465&bounds%5BsouthWest%5D%5Blng%5D=-118.22108078266575" for ::1 at 2019-10-15 16:32:45 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.06973785531382", "lng"=>"-118.17816543842747"}, "southWest"=>{"lat"=>"34.034181201122465", "lng"=>"-118.22108078266575"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.5ms)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:33:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 80ms (Views: 69.9ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:33:16 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (7.7ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.061088672564516&bounds%5BnorthEast%5D%5Blng%5D=-118.23297116394042&bounds%5BsouthWest%5D%5Blat%5D=34.04331039538954&bounds%5BsouthWest%5D%5Blng%5D=-118.25442883605956" for ::1 at 2019-10-15 16:33:17 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.061088672564516", "lng"=>"-118.23297116394042"}, "southWest"=>{"lat"=>"34.04331039538954", "lng"=>"-118.25442883605956"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (15.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (19.1ms)
+Completed 200 OK in 30ms (Views: 14.5ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.065882960746386&bounds%5BnorthEast%5D%5Blng%5D=-118.22995396820068&bounds%5BsouthWest%5D%5Blat%5D=34.04810568912264&bounds%5BsouthWest%5D%5Blng%5D=-118.25141164031982" for ::1 at 2019-10-15 16:33:37 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.065882960746386", "lng"=>"-118.22995396820068"}, "southWest"=>{"lat"=>"34.04810568912264", "lng"=>"-118.25141164031982"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (14.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (16.8ms)
+Completed 200 OK in 27ms (Views: 10.9ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.065882960746386&bounds%5BnorthEast%5D%5Blng%5D=-118.2249025464966&bounds%5BsouthWest%5D%5Blat%5D=34.04810568912264&bounds%5BsouthWest%5D%5Blng%5D=-118.24636021861573" for ::1 at 2019-10-15 16:33:41 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.065882960746386", "lng"=>"-118.2249025464966"}, "southWest"=>{"lat"=>"34.04810568912264", "lng"=>"-118.24636021861573"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.2ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.05992950079016&bounds%5BnorthEast%5D%5Blng%5D=-118.213623454828&bounds%5BsouthWest%5D%5Blat%5D=34.04215098050987&bounds%5BsouthWest%5D%5Blng%5D=-118.23508112694714" for ::1 at 2019-10-15 16:34:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.05992950079016", "lng"=>"-118.213623454828"}, "southWest"=>{"lat"=>"34.04215098050987", "lng"=>"-118.23508112694714"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (14.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (15.8ms)
+Completed 200 OK in 27ms (Views: 11.9ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.06002582072925&bounds%5BnorthEast%5D%5Blng%5D=-118.21231804123107&bounds%5BsouthWest%5D%5Blat%5D=34.042247320649224&bounds%5BsouthWest%5D%5Blng%5D=-118.23377571335021" for ::1 at 2019-10-15 16:34:23 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.06002582072925", "lng"=>"-118.21231804123107"}, "southWest"=>{"lat"=>"34.042247320649224", "lng"=>"-118.23377571335021"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (14.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (15.6ms)
+Completed 200 OK in 23ms (Views: 6.2ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-15 16:34:31 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (1.8ms)
+Completed 200 OK in 20ms (Views: 7.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:34:32 -0700
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.061088672564516&bounds%5BnorthEast%5D%5Blng%5D=-118.23297116394042&bounds%5BsouthWest%5D%5Blat%5D=34.04331039538954&bounds%5BsouthWest%5D%5Blng%5D=-118.25442883605956" for ::1 at 2019-10-15 16:34:32 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (43.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (49.6ms)
+Completed 200 OK in 62ms (Views: 18.1ms | ActiveRecord: 43.3ms)
+
+
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.061088672564516", "lng"=>"-118.23297116394042"}, "southWest"=>{"lat"=>"34.04331039538954", "lng"=>"-118.25442883605956"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (1.6ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.05961954108117&bounds%5BnorthEast%5D%5Blng%5D=-118.23459855455548&bounds%5BsouthWest%5D%5Blat%5D=34.04184095579632&bounds%5BsouthWest%5D%5Blng%5D=-118.25605622667462" for ::1 at 2019-10-15 16:34:34 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.05961954108117", "lng"=>"-118.23459855455548"}, "southWest"=>{"lat"=>"34.04184095579632", "lng"=>"-118.25605622667462"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.6ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:37:44 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 84ms (Views: 79.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:37:45 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (12.7ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.061088672564516&bounds%5BnorthEast%5D%5Blng%5D=-118.23297116394042&bounds%5BsouthWest%5D%5Blat%5D=34.04331039538954&bounds%5BsouthWest%5D%5Blng%5D=-118.25442883605956" for ::1 at 2019-10-15 16:37:45 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.061088672564516", "lng"=>"-118.23297116394042"}, "southWest"=>{"lat"=>"34.04331039538954", "lng"=>"-118.25442883605956"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.2ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:37:55 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 752ms (Views: 747.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:37:57 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (8.6ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 16:37:58 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (20.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (22.0ms)
+Completed 200 OK in 37ms (Views: 16.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:38:13 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 98ms (Views: 85.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:38:13 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (9.2ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 16:38:14 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (13.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (16.8ms)
+Completed 200 OK in 26ms (Views: 12.3ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:38:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 751ms (Views: 748.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:38:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (5.3ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 16:45:04 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.4ms)
+Completed 200 OK in 17ms (Views: 12.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08049829222545&bounds%5BnorthEast%5D%5Blng%5D=-118.16542241210936&bounds%5BsouthWest%5D%5Blat%5D=34.009379101765546&bounds%5BsouthWest%5D%5Blng%5D=-118.25125310058593" for ::1 at 2019-10-15 16:45:10 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08049829222545", "lng"=>"-118.16542241210936"}, "southWest"=>{"lat"=>"34.009379101765546", "lng"=>"-118.25125310058593"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.0ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-15 16:48:49 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/show.json.jbuilder (3.7ms)
+Completed 200 OK in 26ms (Views: 16.9ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/api/listings/undefined" for ::1 at 2019-10-15 16:49:14 -0700
+Processing by Api::ListingsController#update as JSON
+  Parameters: {"listing"=>{"name"=>"Barbell Brigade", "description"=>"Big workout facility with equipment & machines for weightlifting, powerlifting & ower training.", "location"=>"646 Gibbons St, Los Angeles, CA 90031", "longitude"=>"-118.2237428", "latitude"=>"34.066082", "price"=>"25", "guests"=>"2", "benches"=>"2", "power_rack"=>"4", "deadlift_platform"=>"4"}, "id"=>"undefined"}
+  [1m[36mListing Load (77.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:30
+Completed 404 Not Found in 86ms (ActiveRecord: 77.1ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:30:in `update'
+
+Started GET "/" for ::1 at 2019-10-15 16:49:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 909ms (Views: 902.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:49:18 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (8.6ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 16:49:24 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (18.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (21.4ms)
+Completed 200 OK in 35ms (Views: 15.4ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.091018864371684&bounds%5BnorthEast%5D%5Blng%5D=-118.16559407348632&bounds%5BsouthWest%5D%5Blat%5D=34.019908502001975&bounds%5BsouthWest%5D%5Blng%5D=-118.25142476196288" for ::1 at 2019-10-15 16:49:26 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.091018864371684", "lng"=>"-118.16559407348632"}, "southWest"=>{"lat"=>"34.019908502001975", "lng"=>"-118.25142476196288"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.6ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.12655166800657&bounds%5BnorthEast%5D%5Blng%5D=-118.12267872924804&bounds%5BsouthWest%5D%5Blat%5D=33.98433095814021&bounds%5BsouthWest%5D%5Blng%5D=-118.29434010620116" for ::1 at 2019-10-15 16:49:28 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.12655166800657", "lng"=>"-118.12267872924804"}, "southWest"=>{"lat"=>"33.98433095814021", "lng"=>"-118.29434010620116"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (35.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (37.3ms)
+Completed 200 OK in 45ms (Views: 8.3ms | ActiveRecord: 35.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.197572483189234&bounds%5BnorthEast%5D%5Blng%5D=-118.03684804077147&bounds%5BsouthWest%5D%5Blat%5D=33.91313118244147&bounds%5BsouthWest%5D%5Blng%5D=-118.38017079467772" for ::1 at 2019-10-15 16:49:29 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.197572483189234", "lng"=>"-118.03684804077147"}, "southWest"=>{"lat"=>"33.91313118244147", "lng"=>"-118.38017079467772"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.5ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33943473971909&bounds%5BnorthEast%5D%5Blng%5D=-117.86518666381835&bounds%5BsouthWest%5D%5Blat%5D=33.77055309010917&bounds%5BsouthWest%5D%5Blng%5D=-118.55183217163085" for ::1 at 2019-10-15 16:49:29 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33943473971909", "lng"=>"-117.86518666381835"}, "southWest"=>{"lat"=>"33.77055309010917", "lng"=>"-118.55183217163085"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (22.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (23.8ms)
+Completed 200 OK in 38ms (Views: 14.7ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.12655166800657&bounds%5BnorthEast%5D%5Blng%5D=-118.12267872924804&bounds%5BsouthWest%5D%5Blat%5D=33.98433095814021&bounds%5BsouthWest%5D%5Blng%5D=-118.29434010620116" for ::1 at 2019-10-15 16:49:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.12655166800657", "lng"=>"-118.12267872924804"}, "southWest"=>{"lat"=>"33.98433095814021", "lng"=>"-118.29434010620116"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.3ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:52:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 907ms (Views: 903.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:52:41 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (11.5ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:54:00 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 1297ms (Views: 1286.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:54:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 115ms (Views: 89.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:54:44 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/index.json.jbuilder (10.0ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 16:54:44 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (8.2ms)
+Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08220441975274&bounds%5BnorthEast%5D%5Blng%5D=-118.17592421771224&bounds%5BsouthWest%5D%5Blat%5D=34.01108666078646&bounds%5BsouthWest%5D%5Blng%5D=-118.2617549061888" for ::1 at 2019-10-15 16:54:50 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08220441975274", "lng"=>"-118.17592421771224"}, "southWest"=>{"lat"=>"34.01108666078646", "lng"=>"-118.2617549061888"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.4ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:55:04 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (4.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/api/listings/undefined" for ::1 at 2019-10-15 16:55:33 -0700
+Processing by Api::ListingsController#update as JSON
+  Parameters: {"listing"=>{"host_id"=>"1", "name"=>"Barbell Brigade", "description"=>"Big workout facility with equipment & machines for weightlifting, powerlifting & ower training.", "location"=>"646 Gibbons St, Los Angeles, CA 90031", "longitude"=>"-118.2237428", "latitude"=>"34.066082", "price"=>"25", "guests"=>"2", "benches"=>"2", "power_rack"=>"4", "deadlift_platform"=>"4"}, "id"=>"undefined"}
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:30
+Completed 404 Not Found in 3ms (ActiveRecord: 1.0ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Listing with 'id'=undefined:
+  app/controllers/api/listings_controller.rb:30:in `update'
+
+Started PATCH "/api/listings/1" for ::1 at 2019-10-15 16:56:20 -0700
+Processing by Api::ListingsController#update as JSON
+  Parameters: {"listing"=>{"id"=>"1", "host_id"=>"1", "name"=>"Barbell Brigade", "description"=>"Big workout facility with equipment & machines for weightlifting, powerlifting & ower training.", "location"=>"646 Gibbons St, Los Angeles, CA 90031", "longitude"=>"-118.2237428", "latitude"=>"34.066082", "price"=>"25", "guests"=>"2", "benches"=>"2", "power_rack"=>"4", "deadlift_platform"=>"4"}, "id"=>"1"}
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:30
+Unpermitted parameter: :id
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[36mListing Exists (5.1ms)[0m  [1m[34mSELECT  1 AS one FROM "listings" WHERE "listings"."location" = $1 AND "listings"."id" != $2 LIMIT $3[0m  [["location", "646 Gibbons St, Los Angeles, CA 90031"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[36mListing Update (49.5ms)[0m  [1m[33mUPDATE "listings" SET "longitude" = $1, "latitude" = $2, "updated_at" = $3 WHERE "listings"."id" = $4[0m  [["longitude", -118.2237428], ["latitude", 34.066082], ["updated_at", "2019-10-15 23:56:20.141211"], ["id", 1]]
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/listings_controller.rb:32
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (2.3ms)
+Completed 200 OK in 171ms (Views: 9.9ms | ActiveRecord: 60.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:56:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (16.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (24.2ms)
+Completed 200 OK in 42ms (Views: 25.3ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:56:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:56:40 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (12.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (20.4ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 16:56:41 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.1ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.06655132361558&bounds%5BnorthEast%5D%5Blng%5D=-118.15309250682589&bounds%5BsouthWest%5D%5Blat%5D=33.99542043358681&bounds%5BsouthWest%5D%5Blng%5D=-118.23892319530245" for ::1 at 2019-10-15 16:56:46 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.06655132361558", "lng"=>"-118.15309250682589"}, "southWest"=>{"lat"=>"33.99542043358681", "lng"=>"-118.23892319530245"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.9ms)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.102094398749706&bounds%5BnorthEast%5D%5Blng%5D=-118.1101771625876&bounds%5BsouthWest%5D%5Blat%5D=33.959832633601145&bounds%5BsouthWest%5D%5Blng%5D=-118.28183853954073" for ::1 at 2019-10-15 16:56:49 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.102094398749706", "lng"=>"-118.1101771625876"}, "southWest"=>{"lat"=>"33.959832633601145", "lng"=>"-118.28183853954073"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (7.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (9.0ms)
+Completed 200 OK in 31ms (Views: 22.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.136938727645536&bounds%5BnorthEast%5D%5Blng%5D=-118.12645286377011&bounds%5BsouthWest%5D%5Blat%5D=33.99473546191398&bounds%5BsouthWest%5D%5Blng%5D=-118.29811424072324" for ::1 at 2019-10-15 16:56:52 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.136938727645536", "lng"=>"-118.12645286377011"}, "southWest"=>{"lat"=>"33.99473546191398", "lng"=>"-118.29811424072324"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.4ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.101410288300556&bounds%5BnorthEast%5D%5Blng%5D=-118.1693682080084&bounds%5BsouthWest%5D%5Blat%5D=34.03030864800587&bounds%5BsouthWest%5D%5Blng%5D=-118.25519889648496" for ::1 at 2019-10-15 16:56:54 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.101410288300556", "lng"=>"-118.1693682080084"}, "southWest"=>{"lat"=>"34.03030864800587", "lng"=>"-118.25519889648496"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.5ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08364047203761&bounds%5BnorthEast%5D%5Blng%5D=-118.19082588012753&bounds%5BsouthWest%5D%5Blat%5D=34.04808965096165&bounds%5BsouthWest%5D%5Blng%5D=-118.23374122436582" for ::1 at 2019-10-15 16:56:54 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08364047203761", "lng"=>"-118.19082588012753"}, "southWest"=>{"lat"=>"34.04808965096165", "lng"=>"-118.23374122436582"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (1.8ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.07475416516344&bounds%5BnorthEast%5D%5Blng%5D=-118.2015547161871&bounds%5BsouthWest%5D%5Blat%5D=34.0569787545094&bounds%5BsouthWest%5D%5Blng%5D=-118.22301238830624" for ::1 at 2019-10-15 16:56:55 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.07475416516344", "lng"=>"-118.2015547161871"}, "southWest"=>{"lat"=>"34.0569787545094", "lng"=>"-118.22301238830624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.2ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.07912634466548&bounds%5BnorthEast%5D%5Blng%5D=-118.20979446228085&bounds%5BsouthWest%5D%5Blat%5D=34.061351851348476&bounds%5BsouthWest%5D%5Blng%5D=-118.2312521344" for ::1 at 2019-10-15 16:57:07 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.07912634466548", "lng"=>"-118.20979446228085"}, "southWest"=>{"lat"=>"34.061351851348476", "lng"=>"-118.2312521344"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (18.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (19.4ms)
+Completed 200 OK in 28ms (Views: 9.3ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.075322916730094&bounds%5BnorthEast%5D%5Blng%5D=-118.2171329861456&bounds%5BsouthWest%5D%5Blat%5D=34.057547625401256&bounds%5BsouthWest%5D%5Blng%5D=-118.23859065826474" for ::1 at 2019-10-15 16:58:17 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.075322916730094", "lng"=>"-118.2171329861456"}, "southWest"=>{"lat"=>"34.057547625401256", "lng"=>"-118.23859065826474"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (20.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (22.4ms)
+Completed 200 OK in 34ms (Views: 13.5ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 16:59:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 993ms (Views: 989.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 16:59:06 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (6.2ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 16:59:07 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.4ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.06997641296686&bounds%5BnorthEast%5D%5Blng%5D=-118.22224232788085&bounds%5BsouthWest%5D%5Blat%5D=34.03441985884939&bounds%5BsouthWest%5D%5Blng%5D=-118.26515767211913" for ::1 at 2019-10-15 16:59:15 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.06997641296686", "lng"=>"-118.22224232788085"}, "southWest"=>{"lat"=>"34.03441985884939", "lng"=>"-118.26515767211913"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.1ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08454318944083&bounds%5BnorthEast%5D%5Blng%5D=-118.21271512145995&bounds%5BsouthWest%5D%5Blat%5D=34.048992747190056&bounds%5BsouthWest%5D%5Blng%5D=-118.25563046569823" for ::1 at 2019-10-15 16:59:17 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08454318944083", "lng"=>"-118.21271512145995"}, "southWest"=>{"lat"=>"34.048992747190056", "lng"=>"-118.25563046569823"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (15.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (17.2ms)
+Completed 200 OK in 29ms (Views: 10.5ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.075656977290656&bounds%5BnorthEast%5D%5Blng%5D=-118.22344395751952&bounds%5BsouthWest%5D%5Blat%5D=34.057881756049206&bounds%5BsouthWest%5D%5Blng%5D=-118.24490162963866" for ::1 at 2019-10-15 16:59:19 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.075656977290656", "lng"=>"-118.22344395751952"}, "southWest"=>{"lat"=>"34.057881756049206", "lng"=>"-118.24490162963866"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (24.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (26.0ms)
+Completed 200 OK in 50ms (Views: 24.6ms | ActiveRecord: 24.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.075656977290656&bounds%5BnorthEast%5D%5Blng%5D=-118.22065446014403&bounds%5BsouthWest%5D%5Blat%5D=34.057881756049206&bounds%5BsouthWest%5D%5Blng%5D=-118.24211213226317" for ::1 at 2019-10-15 16:59:19 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.075656977290656", "lng"=>"-118.22065446014403"}, "southWest"=>{"lat"=>"34.057881756049206", "lng"=>"-118.24211213226317"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (9.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (11.4ms)
+Completed 200 OK in 27ms (Views: 15.7ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.07121352157617&bounds%5BnorthEast%5D%5Blng%5D=-118.22601887817382&bounds%5BsouthWest%5D%5Blat%5D=34.06232591094094&bounds%5BsouthWest%5D%5Blng%5D=-118.23674771423339" for ::1 at 2019-10-15 16:59:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.07121352157617", "lng"=>"-118.22601887817382"}, "southWest"=>{"lat"=>"34.06232591094094", "lng"=>"-118.23674771423339"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (16.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (18.3ms)
+Completed 200 OK in 30ms (Views: 13.4ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.07121352157617&bounds%5BnorthEast%5D%5Blng%5D=-118.22275731201171&bounds%5BsouthWest%5D%5Blat%5D=34.06232591094094&bounds%5BsouthWest%5D%5Blng%5D=-118.23348614807128" for ::1 at 2019-10-15 16:59:22 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.07121352157617", "lng"=>"-118.22275731201171"}, "southWest"=>{"lat"=>"34.06232591094094", "lng"=>"-118.23348614807128"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (14.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (16.3ms)
+Completed 200 OK in 35ms (Views: 19.8ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.07572168810122&bounds%5BnorthEast%5D%5Blng%5D=-118.23221938167251&bounds%5BsouthWest%5D%5Blat%5D=34.066834550387426&bounds%5BsouthWest%5D%5Blng%5D=-118.24294821773208" for ::1 at 2019-10-15 16:59:24 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.07572168810122", "lng"=>"-118.23221938167251"}, "southWest"=>{"lat"=>"34.066834550387426", "lng"=>"-118.24294821773208"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (10.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (11.4ms)
+Completed 200 OK in 25ms (Views: 13.2ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.075366220493066&bounds%5BnorthEast%5D%5Blng%5D=-118.22801367793716&bounds%5BsouthWest%5D%5Blat%5D=34.06647904548757&bounds%5BsouthWest%5D%5Blng%5D=-118.23874251399673" for ::1 at 2019-10-15 16:59:25 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.075366220493066", "lng"=>"-118.22801367793716"}, "southWest"=>{"lat"=>"34.06647904548757", "lng"=>"-118.23874251399673"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (9.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (11.5ms)
+Completed 200 OK in 23ms (Views: 13.4ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.071669268938365&bounds%5BnorthEast%5D%5Blng%5D=-118.22294966731704&bounds%5BsouthWest%5D%5Blat%5D=34.06278170611003&bounds%5BsouthWest%5D%5Blng%5D=-118.23367850337661" for ::1 at 2019-10-15 16:59:26 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.071669268938365", "lng"=>"-118.22294966731704"}, "southWest"=>{"lat"=>"34.06278170611003", "lng"=>"-118.23367850337661"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (1.9ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.071766177690215&bounds%5BnorthEast%5D%5Blng%5D=-118.21944204565023&bounds%5BsouthWest%5D%5Blat%5D=34.06287862502744&bounds%5BsouthWest%5D%5Blng%5D=-118.2301708817098" for ::1 at 2019-10-15 16:59:27 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.071766177690215", "lng"=>"-118.21944204565023"}, "southWest"=>{"lat"=>"34.06287862502744", "lng"=>"-118.2301708817098"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (80.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (82.5ms)
+Completed 200 OK in 96ms (Views: 13.9ms | ActiveRecord: 80.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:00:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 842ms (Views: 837.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:00:13 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.9ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:00:14 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.9ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 3.2ms)
+
+
+Started PATCH "/api/listings/2" for ::1 at 2019-10-15 17:01:34 -0700
+Processing by Api::ListingsController#update as JSON
+  Parameters: {"listing"=>{"id"=>"2", "host_id"=>"1", "name"=>"Blueprint Training Grounds", "description"=>"Big workout facility with equipment & machines for weightlifting, powerlifting & ower training.", "location"=>"11258 Monarch St ste e, Garden Grove, CA 92841", "longitude"=>"-118.0082287", "latitude"=>"33.799006", "price"=>"25", "guests"=>"2", "benches"=>"2", "power_rack"=>"4", "deadlift_platform"=>"4"}, "id"=>"2"}
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:30
+Unpermitted parameter: :id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[36mListing Exists (3.1ms)[0m  [1m[34mSELECT  1 AS one FROM "listings" WHERE "listings"."location" = $1 AND "listings"."id" != $2 LIMIT $3[0m  [["location", "11258 Monarch St ste e, Garden Grove, CA 92841"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[36mListing Update (0.9ms)[0m  [1m[33mUPDATE "listings" SET "longitude" = $1, "latitude" = $2, "price" = $3, "updated_at" = $4 WHERE "listings"."id" = $5[0m  [["longitude", -118.0082287], ["latitude", 33.799006], ["price", 25.0], ["updated_at", "2019-10-16 00:01:34.041449"], ["id", 2]]
+  ↳ app/controllers/api/listings_controller.rb:32
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/listings_controller.rb:32
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (2.2ms)
+Completed 200 OK in 30ms (Views: 7.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:01:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:01:37 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (9.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/index.json.jbuilder (16.2ms)
+Completed 200 OK in 29ms (Views: 18.1ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:01:38 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (12.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (14.8ms)
+Completed 200 OK in 26ms (Views: 12.5ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.19430683675479&bounds%5BnorthEast%5D%5Blng%5D=-118.07203862304686&bounds%5BsouthWest%5D%5Blat%5D=33.90985456003305&bounds%5BsouthWest%5D%5Blng%5D=-118.41536137695311" for ::1 at 2019-10-15 17:01:48 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.19430683675479", "lng"=>"-118.07203862304686"}, "southWest"=>{"lat"=>"33.90985456003305", "lng"=>"-118.41536137695311"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (22.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (23.8ms)
+Completed 200 OK in 31ms (Views: 8.0ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=35.18233492997543&bounds%5BnorthEast%5D%5Blng%5D=-116.87040898437499&bounds%5BsouthWest%5D%5Blat%5D=32.906796708598314&bounds%5BsouthWest%5D%5Blng%5D=-119.61699101562499" for ::1 at 2019-10-15 17:01:50 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"35.18233492997543", "lng"=>"-116.87040898437499"}, "southWest"=>{"lat"=>"32.906796708598314", "lng"=>"-119.61699101562499"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (27.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (42.1ms)
+Completed 200 OK in 57ms (Views: 29.3ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.619191033479375&bounds%5BnorthEast%5D%5Blng%5D=-117.55705449218749&bounds%5BsouthWest%5D%5Blat%5D=33.4813914487162&bounds%5BsouthWest%5D%5Blng%5D=-118.93034550781249" for ::1 at 2019-10-15 17:01:51 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.619191033479375", "lng"=>"-117.55705449218749"}, "southWest"=>{"lat"=>"33.4813914487162", "lng"=>"-118.93034550781249"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (12.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (16.5ms)
+Completed 200 OK in 33ms (Views: 19.6ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 17:01:52 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.6ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.19430683675479&bounds%5BnorthEast%5D%5Blng%5D=-118.07203862304686&bounds%5BsouthWest%5D%5Blat%5D=33.90985456003305&bounds%5BsouthWest%5D%5Blng%5D=-118.41536137695311" for ::1 at 2019-10-15 17:01:52 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.19430683675479", "lng"=>"-118.07203862304686"}, "southWest"=>{"lat"=>"33.90985456003305", "lng"=>"-118.41536137695311"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.1ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.15056338704724&bounds%5BnorthEast%5D%5Blng%5D=-117.99444768066405&bounds%5BsouthWest%5D%5Blat%5D=33.86596417631903&bounds%5BsouthWest%5D%5Blng%5D=-118.3377704345703" for ::1 at 2019-10-15 17:01:59 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.15056338704724", "lng"=>"-117.99444768066405"}, "southWest"=>{"lat"=>"33.86596417631903", "lng"=>"-118.3377704345703"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.5ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 3.9ms)
+
+
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (41.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (8640.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "liftsinnout_development"[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-10-15 17:07:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 696ms (Views: 690.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:07:53 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (7.8ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:08:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 657ms (Views: 655.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:08:14 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (6.7ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:08:14 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.4ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:09:30 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 656ms (Views: 648.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:09:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (10.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (19.7ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:09:32 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.0ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:11:32 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 631ms (Views: 627.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:11:33 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (6.5ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:11:34 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (8.6ms)
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/api/listings/1%7D" for ::1 at 2019-10-15 17:11:36 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1}"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (2.0ms)
+Completed 200 OK in 18ms (Views: 7.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:11:48 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:11:48 -0700
+  [1m[36mListing Load (60.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (72.3ms)
+Completed 200 OK in 83ms (Views: 22.7ms | ActiveRecord: 60.1ms)
+
+
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.7ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/listings/1%7D" for ::1 at 2019-10-15 17:11:49 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1}"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (2.2ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:11:51 -0700
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:11:51 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (33.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (43.0ms)
+Completed 200 OK in 53ms (Views: 18.5ms | ActiveRecord: 33.9ms)
+
+
+  [1m[36mListing Load (8.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (9.8ms)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:11:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 638ms (Views: 635.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:11:54 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (17.0ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:11:55 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (24.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (27.8ms)
+Completed 200 OK in 37ms (Views: 12.4ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-15 17:11:56 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/show.json.jbuilder (2.6ms)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:11:58 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:11:58 -0700
+  [1m[36mListing Load (106.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (112.3ms)
+Completed 200 OK in 132ms (Views: 25.2ms | ActiveRecord: 106.4ms)
+
+
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (35.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (37.0ms)
+Completed 200 OK in 44ms (Views: 7.9ms | ActiveRecord: 35.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:14:24 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 788ms (Views: 785.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:14:25 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (7.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:14:26 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.8ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-10-15 17:17:15 -0700
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mListing Load (12.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:4
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (2.2ms)
+Completed 200 OK in 29ms (Views: 12.5ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:17:17 -0700
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:17:17 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (37.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (43.5ms)
+Completed 200 OK in 53ms (Views: 15.0ms | ActiveRecord: 37.3ms)
+
+
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.9ms)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:17:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 706ms (Views: 698.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:17:22 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (5.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (11.4ms)
+Completed 200 OK in 20ms (Views: 14.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:17:22 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.9ms)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:18:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 681ms (Views: 678.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:18:34 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (7.9ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:18:34 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.3ms)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:18:45 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 638ms (Views: 635.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:18:47 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (7.8ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:18:47 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.2ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 17:19:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4FV0AiQvvD2_fBRHfeGsHQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 635ms (Views: 632.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-15 17:19:59 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (17.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (23.5ms)
+Completed 200 OK in 35ms (Views: 17.5ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08774909682094&bounds%5BnorthEast%5D%5Blng%5D=-118.20078465576171&bounds%5BsouthWest%5D%5Blat%5D=34.01663599044572&bounds%5BsouthWest%5D%5Blng%5D=-118.28661534423827" for ::1 at 2019-10-15 17:20:00 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08774909682094", "lng"=>"-118.20078465576171"}, "southWest"=>{"lat"=>"34.01663599044572", "lng"=>"-118.28661534423827"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.1ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.123283273482556&bounds%5BnorthEast%5D%5Blng%5D=-118.15786931152343&bounds%5BsouthWest%5D%5Blat%5D=33.98105707561003&bounds%5BsouthWest%5D%5Blng%5D=-118.32953068847655" for ::1 at 2019-10-15 17:22:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.123283273482556", "lng"=>"-118.15786931152343"}, "southWest"=>{"lat"=>"33.98105707561003", "lng"=>"-118.32953068847655"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (7.4ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.19430683675479&bounds%5BnorthEast%5D%5Blng%5D=-118.07203862304686&bounds%5BsouthWest%5D%5Blat%5D=33.90985456003305&bounds%5BsouthWest%5D%5Blng%5D=-118.41536137695311" for ::1 at 2019-10-15 17:22:21 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.19430683675479", "lng"=>"-118.07203862304686"}, "southWest"=>{"lat"=>"33.90985456003305", "lng"=>"-118.41536137695311"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.7ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 17:22:22 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (13.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (16.1ms)
+Completed 200 OK in 25ms (Views: 10.4ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.619191033479375&bounds%5BnorthEast%5D%5Blng%5D=-117.55705449218749&bounds%5BsouthWest%5D%5Blat%5D=33.4813914487162&bounds%5BsouthWest%5D%5Blng%5D=-118.93034550781249" for ::1 at 2019-10-15 17:22:23 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.619191033479375", "lng"=>"-117.55705449218749"}, "southWest"=>{"lat"=>"33.4813914487162", "lng"=>"-118.93034550781249"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (7.2ms)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.33617459754077&bounds%5BnorthEast%5D%5Blng%5D=-117.90037724609374&bounds%5BsouthWest%5D%5Blat%5D=33.76727099629014&bounds%5BsouthWest%5D%5Blng%5D=-118.58702275390624" for ::1 at 2019-10-15 17:22:24 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.33617459754077", "lng"=>"-117.90037724609374"}, "southWest"=>{"lat"=>"33.76727099629014", "lng"=>"-118.58702275390624"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.8ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.26218402079135&bounds%5BnorthEast%5D%5Blng%5D=-117.88389775390624&bounds%5BsouthWest%5D%5Blat%5D=33.692782716368896&bounds%5BsouthWest%5D%5Blng%5D=-118.57054326171874" for ::1 at 2019-10-15 17:22:25 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.26218402079135", "lng"=>"-117.88389775390624"}, "southWest"=>{"lat"=>"33.692782716368896", "lng"=>"-118.57054326171874"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.0ms)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.0086347036613&bounds%5BnorthEast%5D%5Blng%5D=-117.45073205119559&bounds%5BsouthWest%5D%5Blat%5D=33.43753516082892&bounds%5BsouthWest%5D%5Blng%5D=-118.13737755900809" for ::1 at 2019-10-15 22:41:44 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.0086347036613", "lng"=>"-117.45073205119559"}, "southWest"=>{"lat"=>"33.43753516082892", "lng"=>"-118.13737755900809"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (9.5ms)
+Completed 200 OK in 45ms (Views: 27.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.88787923920813&bounds%5BnorthEast%5D%5Blng%5D=-117.20271509114491&bounds%5BsouthWest%5D%5Blat%5D=33.315974861974006&bounds%5BsouthWest%5D%5Blng%5D=-117.88936059895741" for ::1 at 2019-10-15 22:41:45 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.88787923920813", "lng"=>"-117.20271509114491"}, "southWest"=>{"lat"=>"33.315974861974006", "lng"=>"-117.88936059895741"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (9.3ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.005109234116524&bounds%5BnorthEast%5D%5Blng%5D=-117.47238396165704&bounds%5BsouthWest%5D%5Blat%5D=33.43398615772436&bounds%5BsouthWest%5D%5Blng%5D=-118.15902946946954" for ::1 at 2019-10-15 22:41:47 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.005109234116524", "lng"=>"-117.47238396165704"}, "southWest"=>{"lat"=>"33.43398615772436", "lng"=>"-118.15902946946954"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (15.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (20.5ms)
+Completed 200 OK in 38ms (Views: 19.1ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.19728770094593&bounds%5BnorthEast%5D%5Blng%5D=-117.79648064134454&bounds%5BsouthWest%5D%5Blat%5D=33.62745065610155&bounds%5BsouthWest%5D%5Blng%5D=-118.48312614915704" for ::1 at 2019-10-15 22:41:50 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.19728770094593", "lng"=>"-117.79648064134454"}, "southWest"=>{"lat"=>"33.62745065610155", "lng"=>"-118.48312614915704"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (10.5ms)
+Completed 200 OK in 29ms (Views: 22.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.055185878574044&bounds%5BnorthEast%5D%5Blng%5D=-117.96814201829767&bounds%5BsouthWest%5D%5Blat%5D=33.77026687350827&bounds%5BsouthWest%5D%5Blng%5D=-118.31146477220392" for ::1 at 2019-10-15 22:42:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.055185878574044", "lng"=>"-117.96814201829767"}, "southWest"=>{"lat"=>"33.77026687350827", "lng"=>"-118.31146477220392"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (15.2ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.00537417689306&bounds%5BnorthEast%5D%5Blng%5D=-117.89594576328182&bounds%5BsouthWest%5D%5Blat%5D=33.72028847192501&bounds%5BsouthWest%5D%5Blng%5D=-118.23926851718807" for ::1 at 2019-10-15 22:42:32 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.00537417689306", "lng"=>"-117.89594576328182"}, "southWest"=>{"lat"=>"33.72028847192501", "lng"=>"-118.23926851718807"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (7.7ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.934192017601&bounds%5BnorthEast%5D%5Blng%5D=-117.98177645175838&bounds%5BsouthWest%5D%5Blat%5D=33.79164910449376&bounds%5BsouthWest%5D%5Blng%5D=-118.1534378287115" for ::1 at 2019-10-15 22:42:33 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.934192017601", "lng"=>"-117.98177645175838"}, "southWest"=>{"lat"=>"33.79164910449376", "lng"=>"-118.1534378287115"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (15.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (18.1ms)
+Completed 200 OK in 42ms (Views: 26.7ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.89916508696925&bounds%5BnorthEast%5D%5Blng%5D=-117.93476782473152&bounds%5BsouthWest%5D%5Blat%5D=33.75656367684711&bounds%5BsouthWest%5D%5Blng%5D=-118.10642920168465" for ::1 at 2019-10-15 22:42:34 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.89916508696925", "lng"=>"-117.93476782473152"}, "southWest"=>{"lat"=>"33.75656367684711", "lng"=>"-118.10642920168465"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (20.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (23.5ms)
+Completed 200 OK in 38ms (Views: 16.9ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.84571743306513&bounds%5BnorthEast%5D%5Blng%5D=-117.99914084108894&bounds%5BsouthWest%5D%5Blat%5D=33.81006707578231&bounds%5BsouthWest%5D%5Blng%5D=-118.04205618532723" for ::1 at 2019-10-15 22:42:35 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.84571743306513", "lng"=>"-117.99914084108894"}, "southWest"=>{"lat"=>"33.81006707578231", "lng"=>"-118.04205618532723"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (51.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (54.0ms)
+Completed 200 OK in 70ms (Views: 16.1ms | ActiveRecord: 51.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.82992880237433&bounds%5BnorthEast%5D%5Blng%5D=-117.99056155147053&bounds%5BsouthWest%5D%5Blat%5D=33.794271861590104&bounds%5BsouthWest%5D%5Blng%5D=-118.03347689570882" for ::1 at 2019-10-15 22:42:36 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.82992880237433", "lng"=>"-117.99056155147053"}, "southWest"=>{"lat"=>"33.794271861590104", "lng"=>"-118.03347689570882"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (20.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (24.0ms)
+Completed 200 OK in 38ms (Views: 16.8ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.82325824583549&bounds%5BnorthEast%5D%5Blng%5D=-117.99196615635657&bounds%5BsouthWest%5D%5Blat%5D=33.78759852439439&bounds%5BsouthWest%5D%5Blng%5D=-118.03488150059485" for ::1 at 2019-10-15 22:42:37 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.82325824583549", "lng"=>"-117.99196615635657"}, "southWest"=>{"lat"=>"33.78759852439439", "lng"=>"-118.03488150059485"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.3ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.80765894626935&bounds%5BnorthEast%5D%5Blng%5D=-118.01074161946082&bounds%5BsouthWest%5D%5Blat%5D=33.80320148105014&bounds%5BsouthWest%5D%5Blng%5D=-118.0161060374906" for ::1 at 2019-10-15 22:42:39 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.80765894626935", "lng"=>"-118.01074161946082"}, "southWest"=>{"lat"=>"33.80320148105014", "lng"=>"-118.0161060374906"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (45.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (48.2ms)
+Completed 200 OK in 58ms (Views: 11.2ms | ActiveRecord: 45.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.804565974877406&bounds%5BnorthEast%5D%5Blng%5D=-118.00633284395519&bounds%5BsouthWest%5D%5Blat%5D=33.80010834854287&bounds%5BsouthWest%5D%5Blng%5D=-118.01169726198498" for ::1 at 2019-10-15 22:42:40 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.804565974877406", "lng"=>"-118.00633284395519"}, "southWest"=>{"lat"=>"33.80010834854287", "lng"=>"-118.01169726198498"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.1ms)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.80223164669827&bounds%5BnorthEast%5D%5Blng%5D=-118.00568397624374&bounds%5BsouthWest%5D%5Blat%5D=33.797773898775375&bounds%5BsouthWest%5D%5Blng%5D=-118.01104839427353" for ::1 at 2019-10-15 22:42:41 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.80223164669827", "lng"=>"-118.00568397624374"}, "southWest"=>{"lat"=>"33.797773898775375", "lng"=>"-118.01104839427353"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.7ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.8009307804513&bounds%5BnorthEast%5D%5Blng%5D=-118.0064711518865&bounds%5BsouthWest%5D%5Blat%5D=33.79647296477325&bounds%5BsouthWest%5D%5Blng%5D=-118.01183556991629" for ::1 at 2019-10-15 22:42:43 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.8009307804513", "lng"=>"-118.0064711518865"}, "southWest"=>{"lat"=>"33.79647296477325", "lng"=>"-118.01183556991629"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.1ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.79981634829819&bounds%5BnorthEast%5D%5Blng%5D=-118.00781225639395&bounds%5BsouthWest%5D%5Blat%5D=33.79758744045895&bounds%5BsouthWest%5D%5Blng%5D=-118.01049446540884" for ::1 at 2019-10-15 22:42:45 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.79981634829819", "lng"=>"-118.00781225639395"}, "southWest"=>{"lat"=>"33.79758744045895", "lng"=>"-118.01049446540884"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (59.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (62.1ms)
+Completed 200 OK in 73ms (Views: 13.0ms | ActiveRecord: 59.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.799259126779965&bounds%5BnorthEast%5D%5Blng%5D=-118.00848280864767&bounds%5BsouthWest%5D%5Blat%5D=33.79814467286031&bounds%5BsouthWest%5D%5Blng%5D=-118.00982391315512" for ::1 at 2019-10-15 22:42:46 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.799259126779965", "lng"=>"-118.00848280864767"}, "southWest"=>{"lat"=>"33.79814467286031", "lng"=>"-118.00982391315512"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (9.0ms)
+Completed 200 OK in 22ms (Views: 11.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.79910095526279&bounds%5BnorthEast%5D%5Blng%5D=-118.00782566743902&bounds%5BsouthWest%5D%5Blat%5D=33.79798649928367&bounds%5BsouthWest%5D%5Blng%5D=-118.00916677194647" for ::1 at 2019-10-15 22:42:49 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.79910095526279", "lng"=>"-118.00782566743902"}, "southWest"=>{"lat"=>"33.79798649928367", "lng"=>"-118.00916677194647"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (5.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (7.3ms)
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.7996581778108&bounds%5BnorthEast%5D%5Blng%5D=-118.0071551151853&bounds%5BsouthWest%5D%5Blat%5D=33.797429265852536&bounds%5BsouthWest%5D%5Blng%5D=-118.00983732420019" for ::1 at 2019-10-15 22:42:51 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.7996581778108", "lng"=>"-118.0071551151853"}, "southWest"=>{"lat"=>"33.797429265852536", "lng"=>"-118.00983732420019"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.0ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.80077261202346&bounds%5BnorthEast%5D%5Blng%5D=-118.00581401067785&bounds%5BsouthWest%5D%5Blat%5D=33.79631478810742&bounds%5BsouthWest%5D%5Blng%5D=-118.01117842870764" for ::1 at 2019-10-15 22:42:52 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.80077261202346", "lng"=>"-118.00581401067785"}, "southWest"=>{"lat"=>"33.79631478810742", "lng"=>"-118.01117842870764"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (2.5ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.80300143691464&bounds%5BnorthEast%5D%5Blng%5D=-118.00313180166296&bounds%5BsouthWest%5D%5Blat%5D=33.79408578908634&bounds%5BsouthWest%5D%5Blng%5D=-118.01386063772253" for ::1 at 2019-10-15 22:42:53 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.80300143691464", "lng"=>"-118.00313180166296"}, "southWest"=>{"lat"=>"33.79408578908634", "lng"=>"-118.01386063772253"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (4.2ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.807458912554175&bounds%5BnorthEast%5D%5Blng%5D=-117.99776738363317&bounds%5BsouthWest%5D%5Blat%5D=33.78962761692729&bounds%5BsouthWest%5D%5Blng%5D=-118.01922505575232" for ::1 at 2019-10-15 22:42:54 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.807458912554175", "lng"=>"-117.99776738363317"}, "southWest"=>{"lat"=>"33.78962761692729", "lng"=>"-118.01922505575232"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.1ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.869839183437655&bounds%5BnorthEast%5D%5Blng%5D=-117.92266553121618&bounds%5BsouthWest%5D%5Blat%5D=33.727188838438884&bounds%5BsouthWest%5D%5Blng%5D=-118.09432690816931" for ::1 at 2019-10-15 22:42:55 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.869839183437655", "lng"=>"-117.92266553121618"}, "southWest"=>{"lat"=>"33.727188838438884", "lng"=>"-118.09432690816931"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (7.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (11.7ms)
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.92225841978645&bounds%5BnorthEast%5D%5Blng%5D=-118.02247755508995&bounds%5BsouthWest%5D%5Blat%5D=33.779695570876335&bounds%5BsouthWest%5D%5Blng%5D=-118.19413893204307" for ::1 at 2019-10-15 22:42:56 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.92225841978645", "lng"=>"-118.02247755508995"}, "southWest"=>{"lat"=>"33.779695570876335", "lng"=>"-118.19413893204307"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (7.0ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=33.96790729520384&bounds%5BnorthEast%5D%5Blng%5D=-118.11904217085657&bounds%5BsouthWest%5D%5Blat%5D=33.82542073901861&bounds%5BsouthWest%5D%5Blng%5D=-118.2907035478097" for ::1 at 2019-10-15 22:43:03 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"33.96790729520384", "lng"=>"-118.11904217085657"}, "southWest"=>{"lat"=>"33.82542073901861", "lng"=>"-118.2907035478097"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (46.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (48.8ms)
+Completed 200 OK in 62ms (Views: 14.2ms | ActiveRecord: 46.8ms)
+
+

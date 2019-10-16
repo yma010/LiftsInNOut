@@ -4,14 +4,12 @@ import ListingsMap from '../listings/listings_map';
 
 class Search extends React.Component {
   componentDidMount(){
-    // window.scrollTo(0,0);
+    window.scrollTo(0,0);
   }
 
   render(){
     const {
       listings,
-      fetchListings,
-      fetchListing,
       updateFilter,
       searchCoords
     } = this.props;

@@ -27,31 +27,32 @@ class ListingsMap extends React.Component {
 
   createMap(){
     const mapOptions = {
-      center: { lat: 34.0522, lng: 118.2437 },
-      zoom: 10,
+      center: this.props.searchCoords,
+      zoom: 13,
       gestureHandling: 'greedy' //Map always pans when user swipes/drags screen
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick);
+
     this.registerListeners();
     this.MarkerManager.updateMarkers(this.props.listings);
-
   }
 
-  handleMarkerClick() {
-    this.props.history.push(`/listings/${listings.id}}`);
+  handleMarkerClick(listings) {
+    this.props.history.push(`/listings/${listings.id}`);
   }
 
   registerListeners() {
     google.maps.event.addListener(this.map, 'idle', () => {
       const { north, south, east, west } = this.map.getBounds().toJSON();
-      const bounds = {
+      let bounds = {
         northEast: { lat: north, lng: east },
-        southWest: { lat: south, lng: west} };
-
-        this.props.updateFilter('bounds', bounds);
-      });
+        southWest: { lat: south, lng: west }
+      };
+        
+      this.props.updateFilter('bounds', bounds);
+    });
   };
 
   render(){

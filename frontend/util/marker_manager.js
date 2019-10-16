@@ -1,39 +1,40 @@
 export default class MarkerManager {
-  constructor(map){
+  constructor(map, handleMarkerClick){
     this.map = map;
     this.markers = {};
 
-    this.handleMarkerClick = this.handleMarkerClick;
+    this.handleMarkerClick = handleMarkerClick;
   }
   
   updateMarkers(listings){
-    // debugger;
     let listingsObj = {};
     listings.forEach( listing => (listingsObj[listings.id] = listing));
 
     listings
       .filter(listing => !this.markers[listing.id])
       .forEach(newListing => this.createMarker(newListing));
+
     Object.keys(this.markers)
-      .filter(listing => !this.markers[listing.id])
-      .forEach(newListing => this.createMarker(newListing));
+      .filter(listingId => !listingsObj[listingId])
+      .forEach(listingId => this.removeMarker(this.markers[listingId]));
   }
 
   createMarker(listings){
-    const pos = new google.maps.LatLng(listings.latitude, listings.longitude)
-    
+    let pos = {lat: listings.latitude, lng: listings.longitude}
+    console.log(listings.price)
+
     if (!this.markers[listings.id]) {
-    const marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
       position: pos, 
       map: this.map,
       label: {
         text: `$${listings.price}`,
-        fontSize: '12px',
+        fontSize: '13px',
         fontWeight: 'bold',
-        color: 'white'
+        color: 'black'
       }, 
       icon: {
-        path: 'M24-8c0 4.4-3.6 8-8 8h-32c-4.4 0-8-3.6-8-8v-32c0-4.4 3.6-8 8-8h32c4.4 0 8 3.6 8 8v32z',
+        path: 'm22,-28.38281l-44,0l0,20l16,0l6,5l6,-5l16,0l0,-20z',
         labelOrigin: new google.maps.Point(0, -18),
         fillColor: "white",
         fillOpacity: 1,
@@ -51,6 +52,7 @@ export default class MarkerManager {
     );
    }
   }
+  
 
   removeMarker(marker) {
     if (this.markers[marker.id]) {
