@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavBar from '../nav/nav_bar'
 
 class ListingShow extends React.Component {
   constructor(props){
@@ -28,9 +29,12 @@ class ListingShow extends React.Component {
 
     return (
       <div>
+        <NavBar/>
+        <div className='listings-show-container'>
         <h3>{listing.name}</h3>
         <p>{listing.description}</p>
         <Link to="/listings">Back to Index</Link>
+        </div>
       </div>
     );
   }

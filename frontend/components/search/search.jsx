@@ -1,6 +1,7 @@
 import React from 'react';
 import ListingIndexContainer from '../listings/listings_index_container';
 import ListingsMap from '../listings/listings_map';
+import NavBar from '../nav/nav_bar';
 
 class Search extends React.Component {
   componentDidMount(){
@@ -16,6 +17,7 @@ class Search extends React.Component {
 
     return (
       <div>
+        <NavBar/>
         <div className="listings-index">
           <ListingIndexContainer />
         <div className="listings-index-map">

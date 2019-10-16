@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ListingIndexItem = ({ listings }) => (
   <li className="listings-index-item">
     <div className="listings-index-item-details">
-    <Link to={`/listings/${listings.id}`}>{listings.name}</Link>
+    <Link to={`/listings/${listings.id}`}>{listings.name}
 
     <div className="listings-index-location">
       Address: {listings.location}
@@ -26,9 +26,8 @@ const ListingIndexItem = ({ listings }) => (
       <div className="listings-index-platform">
         Deadlift Platforms: {listings.deadlift_platform}
       </div>
-
     </div>
-
+    </Link>
     <div className="listings-index-price">${listings.price} / Day</div>
     </div>
   </li>

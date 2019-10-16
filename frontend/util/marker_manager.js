@@ -21,7 +21,6 @@ export default class MarkerManager {
 
   createMarker(listings){
     let pos = {lat: listings.latitude, lng: listings.longitude}
-    console.log(listings.price)
 
     if (!this.markers[listings.id]) {
     let marker = new google.maps.Marker({

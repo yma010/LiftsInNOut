@@ -8,6 +8,7 @@
   display: flex;
   flex-wrap: nowrap;
   line-height: 1.43;
+  text-decoration: none;
 }
 
 .listings-index-ul{
@@ -15,7 +16,7 @@
   height: 200px;
 }.listings-index-item {
     position: relative;
-    color: rgb(72, 72, 72);
+    color: rgb(72, 72, 72) !important;
     margin-left: 20px;
     margin-bottom: 20px;
     flex-direction: column;
@@ -25,16 +26,21 @@
     height: 100%;
     padding-left: 8px;
     padding-right: 8px;
+    background-color: white;
   }.listings-index-item:hover{
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
   }.listings-index-item-details{
-    width: 50%;
+    width: 100%;
   }
   .listings-index-price{
     position: absolute;
     display: flex;  
     flex-direction: flex-end;
   }
+  a {
+    color: inherit;
+  }
+
 
 .listings-index-map{
   position: absolute !important;
@@ -45,4 +51,12 @@
 } #map-container {
     height: 100%;
     width: 100%;
+}
+
+.listings-show-container{
+    margin-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 1.43;
 }

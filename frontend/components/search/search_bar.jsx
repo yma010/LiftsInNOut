@@ -13,17 +13,17 @@ class SearchBar extends React.Component {
   }
 
   componentDidMount(){
-    const input = document.getElementById('searchBar-input');
+    const input = document.getElementById('searchbar-input');
     this.autocomplete = new google.maps.places.Autocomplete(input);
-    this.autocomplete.addListener('place_changed', this.setDestination);
+    this.autocomplete.addListener(input, this.setDestination);
   }
 
   setDestination(){
-    const location = this.autocomplete.getPlace();
+    const destination = this.autocomplete.getPlace();
     this.setState({
-      location: location.formatted_address,
-      latitude: location.geometry.location.lat(),
-      longitude: location.geometry.location.lng()
+      destination: destination.formatted_address,
+      latitude: destination.geometry.location.lat(),
+      longitude: destination.geometry.location.lng()
     })
     this.handleSubmit();
   }
@@ -31,8 +31,8 @@ class SearchBar extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const lat = this.state.latitude || 34.0522;
-    const lng = thisstate.longitude || -118.2437;
-    const hash = `&lat=${lat}&lng=${lng}&checkin=null&checkout=null`
+    const lng = this.state.longitude || -118.2437;
+    const hash = `&lat=${lat}&lng=${lng}`
     this.props.history.push({
       pathname: '/listings',
       hash: hash
@@ -41,7 +41,7 @@ class SearchBar extends React.Component {
 
   render(){
     return(
-      <div>
+      <div className='searchbar'>
         <input type="text"
         id="searchbar-input"
         placeholder='Try "Los Angeles"'

@@ -4,31 +4,18 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-
-import Modal from './modals/modal';
-import NavContainer from './nav/nav_container';
-import ListingsIndexContainer from './listings/listings_index_container'; //where that container @ tho??
 import ListingShowContainer from './listings/listings_show_container';
 import SearchContainer from './search/search_container'
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
-
+import Splash from './splash/splash';
 const App = () => (
-  <div>
-    <Modal/>
-    <header className="navbar">
-      <div className="nav-logo"></div>
-      {/* PLACE HOLDER FOR SEARCH BAR */}
-      <NavContainer />
-    </header>
     <main>
-    <Switch>
+      <Route exact path ="/" component={Splash}/>
       <Route exact path="/listings" component={SearchContainer} />
       <Route path="/listings/:listingId" component={ListingShowContainer} />
       {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute  exact path="/signup" component={SignupFormContainer} /> */}
-    </Switch>
     </main>
-  </div>
 );
 
 export default App;
