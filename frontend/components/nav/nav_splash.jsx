@@ -8,6 +8,7 @@ const NavBarSplash = () => {
     <header>
       <Modal />
       <div className="navbar-splash">
+        <div className="nav-logo" onClick={() => props.history.push('/')}></div>
         <NavSplashContainer />
       </div>
     </header >
