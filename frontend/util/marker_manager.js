@@ -31,7 +31,7 @@ export default class MarkerManager {
         text: `$${listings.price}`,
         fontSize: '13px',
         fontWeight: 'bold',
-        color: 'black'
+        color: '#484848'
       }, 
       icon: {
         path: 'm22,-28.38281l-44,0l0,20l16,0l6,5l6,-5l16,0l0,-20z',

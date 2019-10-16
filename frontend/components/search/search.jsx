@@ -16,12 +16,16 @@ class Search extends React.Component {
 
     return (
       <div>
-        <ListingIndexContainer />
-        <ListingsMap
-          listings={listings}
-          updateFilter={updateFilter}
-          searchCoords={searchCoords}
+        <div className="listings-index">
+          <ListingIndexContainer />
+        <div className="listings-index-map">
+          <ListingsMap
+            listings={listings}
+            updateFilter={updateFilter}
+            searchCoords={searchCoords}
           />
+        </div>
+        </div>
       </div>
     )
   }
