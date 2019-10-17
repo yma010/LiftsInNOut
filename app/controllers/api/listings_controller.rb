@@ -1,7 +1,7 @@
 class Api::ListingsController < ApplicationController
 
   def show
-    @listing = Listing.find(params[:id])
+    @listing = Listing.with_attached_photos.find(params[:id])
   end
 
   def index
@@ -46,7 +46,7 @@ class Api::ListingsController < ApplicationController
   private
 
   def listing_params
-    params.require(:listing).permit(:host_id, :name, :description, :location, :longitude, :latitude, :price, :guests, :benches, :power_rack,:deadlift_platform)
+    params.require(:listing).permit(:host_id, :name, :description, :location, :longitude, :latitude, :price, :guests, :benches, :power_rack, :deadlift_platform, photos: [] )
   end
 
   def bounds
