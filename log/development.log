@@ -20837,3 +20837,183 @@ Completed 200 OK in 89ms (Views: 13.0ms | ActiveRecord: 74.5ms)
 Completed 200 OK in 477ms (Views: 143.8ms | ActiveRecord: 190.0ms)
 
 
+Started GET "/api/listings" for ::1 at 2019-10-16 15:27:49 -0700
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08646958818555&bounds%5BnorthEast%5D%5Blng%5D=-118.2059344970703&bounds%5BsouthWest%5D%5Blat%5D=34.01791655347084&bounds%5BsouthWest%5D%5Blng%5D=-118.28146550292968" for ::1 at 2019-10-16 15:27:49 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/index.json.jbuilder (83.2ms)
+Completed 200 OK in 163ms (Views: 74.6ms | ActiveRecord: 41.6ms)
+
+
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08646958818555", "lng"=>"-118.2059344970703"}, "southWest"=>{"lat"=>"34.01791655347084", "lng"=>"-118.28146550292968"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (6.9ms)
+Completed 200 OK in 21ms (Views: 12.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-16 15:37:17 -0700
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08646958818555&bounds%5BnorthEast%5D%5Blng%5D=-118.2059344970703&bounds%5BsouthWest%5D%5Blat%5D=34.01791655347084&bounds%5BsouthWest%5D%5Blng%5D=-118.28146550292968" for ::1 at 2019-10-16 15:37:18 -0700
+Processing by Api::ListingsController#index as JSON
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08646958818555", "lng"=>"-118.2059344970703"}, "southWest"=>{"lat"=>"34.01791655347084", "lng"=>"-118.28146550292968"}}}
+  Rendering api/listings/index.json.jbuilder
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  [1m[36mListing Load (3.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (5.6ms)
+Completed 200 OK in 24ms (Views: 19.1ms | ActiveRecord: 3.2ms)
+
+
+  Rendered api/listings/_listing.json.jbuilder (2.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/index.json.jbuilder (78.6ms)
+Completed 200 OK in 94ms (Views: 70.0ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-17 08:27:30 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4586196533477966513_70307789524600'
+
+Started POST "/__better_errors/92c99d825cdce6c8/variables" for ::1 at 2019-10-17 08:27:32 -0700
+Started GET "/" for ::1 at 2019-10-17 08:28:07 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4586196533477966513_70307788918420'
+
+Started POST "/__better_errors/a4891d944deaec08/variables" for ::1 at 2019-10-17 08:28:07 -0700
+Started GET "/" for ::1 at 2019-10-17 08:29:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1634ms (Views: 1631.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-17 08:29:22 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/index.json.jbuilder (15.9ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-17 08:32:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4586196533477966513_70307773431920'
+
+Started POST "/__better_errors/1bc73fdd3b8fa3fa/variables" for ::1 at 2019-10-17 08:32:29 -0700
+Started GET "/" for ::1 at 2019-10-17 08:36:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4586196533477966513_70307785039820'
+
+Started POST "/__better_errors/1eab595ffd027e46/variables" for ::1 at 2019-10-17 08:36:01 -0700
+Started GET "/" for ::1 at 2019-10-17 08:36:03 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4586196533477966513_70307727117340'
+
+Started POST "/__better_errors/e905ae182bc3e9b0/variables" for ::1 at 2019-10-17 08:36:03 -0700
+Started GET "/" for ::1 at 2019-10-17 08:36:47 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `[]' for nil:NilClass:
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4586196533477966513_70307772891760'
+
+Started POST "/__better_errors/ebcda01e568d9686/variables" for ::1 at 2019-10-17 08:36:47 -0700
+Started GET "/" for ::1 at 2019-10-17 08:37:13 -0700
+  [1m[35m (10.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/user/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 12072ms (Views: 12067.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-17 08:37:26 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 195ms (Views: 192.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-17 08:37:27 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (283.9ms)
+Completed 200 OK in 362ms (Views: 132.7ms | ActiveRecord: 170.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-17 08:37:30 -0700
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (24.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/index.json.jbuilder (33.8ms)
+Completed 200 OK in 44ms (Views: 18.6ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=34.08646958818555&bounds%5BnorthEast%5D%5Blng%5D=-118.2059344970703&bounds%5BsouthWest%5D%5Blat%5D=34.01791655347084&bounds%5BsouthWest%5D%5Blng%5D=-118.28146550292968" for ::1 at 2019-10-17 08:37:31 -0700
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"34.08646958818555", "lng"=>"-118.2059344970703"}, "southWest"=>{"lat"=>"34.01791655347084", "lng"=>"-118.28146550292968"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (latitude < NULL) AND (latitude > NULL) AND (longitude > NULL) AND (longitude < NULL)[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/index.json.jbuilder (3.2ms)
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.9ms)
+
+

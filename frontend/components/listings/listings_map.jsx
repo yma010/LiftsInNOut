@@ -5,6 +5,10 @@ import MarkerManager from '../../util/marker_manager';
 class ListingsMap extends React.Component {
   constructor(props){
     super(props);
+    this.searchParams = new URLSearchParams(`${this.props.history.location.hash}`)
+    
+    const lat = parseFloat(this.searchParams.get('lat')) || 34.0522;
+    const lng = parseFloat(this.searchParams.get('lng')) || -118.2437;
 
     this.createMap = this.createMap.bind(this);
     this.handleMarkerClick = this.handleMarkerClick.bind(this);

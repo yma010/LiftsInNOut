@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Liftsinnout</title>
-    <%= javascript_include_tag  "https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ-m90KOPoGntvZs2tWlp45yai49b3Dbs&libraries=places" %>
+    <%  map_key = Rails.application.credentials.google[:api_key] %>
+    <%= javascript_include_tag  "https://maps.googleapis.com/maps/api/js?key=#{map_key}&libraries=places" %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
