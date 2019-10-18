@@ -14,6 +14,9 @@ class ListingsIndex extends React.Component {
 
     return (
       <div>
+        <div className="listings-index-header">
+          {this.props.listings.length} + {this.props.listings.length === 1 ? "facilty" : "facilities"} near you!
+        </div>
         <ul className="listings-index-ul">
           {listingItems}
         </ul>
