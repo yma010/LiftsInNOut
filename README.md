@@ -1,7 +1,9 @@
-# README
+# LiftsInNOut
+______
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Travelling as an athlete with a strict training regime is tough. Let us help you find an accommadating training facility to suit your specialized needs!
+
+_______
 
 Things you may want to cover:
 
