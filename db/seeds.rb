@@ -8,7 +8,6 @@
 
 #Generates Users
 require 'open-uri'
-require 'byebug'
 
 User.destroy_all
 
@@ -227,3 +226,5 @@ swim2.photos.attach(io: swim_2, filename: 'dp2.jpg')
 swim2.photos.attach(io: swim_3, filename: 'dp3.jpg')
 swim2.photos.attach(io: swim_4, filename: 'dp4.jpg')
 swim2.photos.attach(io: swim_5, filename: 'dp5.jpg')
+
+####
