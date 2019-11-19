@@ -23,7 +23,7 @@ class Listing < ApplicationRecord
   validates :benches, :power_rack, :deadlift_platform, presence: true
   validates :location, uniqueness: true, presence: true
 
-  # has_many_attached :photos
+  has_many_attached :photos
 
   belongs_to :host,
     primary_key: :id,

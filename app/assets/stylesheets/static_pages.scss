@@ -5,6 +5,32 @@
   box-sizing: border-box;
 }
 
+
+body {
+  height: 100vh;
+  width: inherit;
+  margin: inherit;
+}
+
+#root {
+  height:inherit;
+  width: inherit;
+}
+
+main {
+  height: inherit;
+  width: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  outline: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -12,18 +38,52 @@
   padding-top: 5px;
   padding-left: 25px;
   padding-right: 25px;
-  height: 70px  ;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  top: 0;
   background: white;
   border-bottom: 1px solid #e4e4e4;
   align-items: center;
   color: #484848;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  position: relative;
+  font-family: CircularStd, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  position: fixed;
 } nav {
   height: inherit;
   display: flex;
   flex-direction: row;
 }  
+.navbar-splash {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  background: transparent;
+  align-items: center;
+  font-family: monteserrat, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  position: fixed;
+} .session-button-splash{
+  color: white;
+  font-size: 14px;
+  border: none;
+  height: inherit;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+} .session-button-splash:hover{
+  padding-top: 3px;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  }
+
 .nav-button {
     font-size: 14px;
     border: none;
@@ -32,20 +92,35 @@
     text-align: center;
     text-decoration: none;
     color: #484848;
-}
-
-.nav-button:hover{
-  padding-top: 2px;
-  border-bottom: 2px solid #484848;
-  cursor: pointer;
+} .nav-button:hover{
+    padding-top: 2px;
+    border-bottom: 2px solid #484848;
+    cursor: pointer;
   }
-button {
-  cursor: pointer;
-}
+
 .nav-logo{
   background-image: image_url("lifts_in_n_out_logo.png");
   background-size: 40px 40px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
+.splash-home {
+  background-image: image_url("curtis-macnewton-5rKPeFcsSTY-unsplash.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bg-credit {
+  display: none;
+}
