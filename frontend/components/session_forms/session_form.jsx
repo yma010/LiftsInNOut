@@ -96,7 +96,6 @@ class SessionForm extends React.Component {
         </div>
       }
 
-    // debugger;
     let errors = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>);
 
     return (
