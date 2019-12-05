@@ -30,6 +30,7 @@ class ListingsMap extends React.Component {
   }
 
   createMap(){
+    console.log(this.props);
     const mapOptions = {
       center: this.props.searchCoords,
       zoom: 13,

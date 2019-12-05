@@ -41,7 +41,7 @@ class SearchForm extends React.Component {
     e.preventDefault();
     const lat = this.state.latitude || 34.0522;
     const lng = this.state.longitude || -118.2437;
-    const hash = `&lat=${lat}&lng=${lng}&checkin=null&checkout=null`
+    const hash = `&lat=${lat}&lng=${lng}`
     this.props.history.push({
       pathname: '/listings',
       hash: hash

@@ -20,12 +20,13 @@ class SearchBar extends React.Component {
 
   setDestination(){
     const destination = this.autocomplete.getPlace();
+    console.log(destination);
     this.setState({
       destination: destination.formatted_address,
       latitude: destination.geometry.location.lat(),
       longitude: destination.geometry.location.lng()
     })
-    this.handleSubmit();
+    this.handleSubmit(e);
   }
 
   handleSubmit(e) {
@@ -41,12 +42,13 @@ class SearchBar extends React.Component {
 
   render(){
     return(
-      <div className='searchbar'>
+      <form className='searchbar'>
         <input type="text"
-        id="searchbar-input"
-        placeholder='Try "Los Angeles"'
+          id="searchbar-input"
+          placeholder='Try "Los Angeles"'
         />
-      </div>
+        <button onClick={this.setDestination}>Enter</button>
+      </form>
     )
   }
 }
