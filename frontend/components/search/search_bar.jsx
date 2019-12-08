@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
-class SearchBar extends React.Component {
+class SearchBar extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -14,6 +14,7 @@ class SearchBar extends React.Component {
 
   componentDidMount(){
     const input = document.getElementById('searchbar-input');
+    console.log(input);
     this.autocomplete = new google.maps.places.Autocomplete(input);
     this.autocomplete.addListener(input, this.setDestination);
   }
