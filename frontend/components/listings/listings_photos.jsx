@@ -1,9 +1,12 @@
 import React from "react";
 
 class ListingsPhoto extends React.Component {
+  constructor(props){
+    super(props)
+  }
 
+  
   render(){
-    // debugger;
     const { listings } = this.props;
 
 
