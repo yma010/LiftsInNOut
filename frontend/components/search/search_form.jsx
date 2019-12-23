@@ -1,73 +1,141 @@
 import React from 'react';
+import 'react-dates/initialize';
+import { SingleDatePicker } from 'react-dates';
+import moment from 'moment';
 import { withRouter } from 'react-router-dom';
-import { fetchListings } from '../../util/listings_api_util';
 
 class SearchForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      location: '',
-      latitude: null,
-      longitude: null
+      address: '',
+      lat: null,
+      long: null,
+      startDate: null,
+      endDate: null,
+      focused1: false,
+      focused2: false
     }
-
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.setDestination = this.setDestination.bind(this);
+    this.setNewLocation = this.setNewLocation.bind(this);
+
+    this.defaultAddress = '84 Withers St. Brooklyn, NY 11211';
   }
 
-  componentDidMount(){
+  componentDidMount() {
     const input = document.getElementById('location-input');
     this.autocomplete = new google.maps.places.Autocomplete(input);
-    this.autocomplete.addListener('place_changed', this.setDestination);
+    this.autocomplete.addListener('place_changed', this.setNewLocation);
   }
 
-  setDestination(){
-    const destination = this.autocomplete.getPlace()
+  setNewLocation() {
+    const place = this.autocomplete.getPlace()
     this.setState({
-      location: destination.formatted_address,
-      latitude: destination.geometry.location.lat(),
-      longitude: destination.geometry.location.lng()
+      address: place.formatted_address,
+      lat: place.geometry.location.lat(),
+      long: place.geometry.location.lng()
     })
   }
 
   handleChange(field) {
     return (e) => {
-      this.setState({[field]: e.target.value})
+      this.setState({ [field]: e.target.value })
     }
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    const lat = this.state.latitude || 34.0522;
-    const lng = this.state.longitude || -118.2437;
-    const hash = `&lat=${lat}&lng=${lng}`
+
+    const lat = this.state.lat || 40.716880;
+    const long = this.state.long || -73.948810;
+
+    let startDate;
+    let endDate;
+
+    if (this.state.startDate === null) {
+      startDate = null;
+    } else {
+      startDate = moment(this.state.startDate).format("YYYY/MM/DD");
+    }
+
+    if (this.state.endDate === null) {
+      endDate = null;
+    } else {
+      endDate = moment(this.state.endDate).format("YYYY/MM/DD");
+    }
+
+    const hash = `&lat=${lat}&long=${long}&checkin=${startDate}&checkout=${endDate}`
+
     this.props.history.push({
       pathname: '/listings',
       hash: hash
     })
+
   }
 
-  render(){
-    return(
-    <div id="search-form" className="container">
-      <div id="search-form" className="header">
-        <h1 id="search-form" className="welcome-header">Need a place to train while travelling?</h1>
-        <h2 id="search-form" className="welcome-subheader">Find a gym to suit your training needs for athletes by athletes</h2>
-      </div>
 
-      <form id="search-form" className="search-splash">
-        <div className="search-location">
-          <label>WHERE</label>
-            <input id="location-input" type="text" placeholder="Anywhere" onChange={this.handleChange('location')}/>
+  render() {
+    return (
+      <div className='search-form-container'>
+        <div className='welcome-message-container'>
+          <h1 className='welcome-message'>
+            Whether you're a professional or an amateur athlete
+          </h1>
+          <h2>
+            You deserve to find a training facility perfectly suited to your needs.
+          </h2>
         </div>
-        <button className='search-submit' onClick={this.handleSubmit}>
-          Search
-        </button>
-      </form>
-    </div>
+
+        <form className='search-form'>
+          <div className='location-search-container'>
+            <label>WHERE</label>
+            <input
+              id='location-input'
+              type="text"
+              placeholder="Anywhere"
+              onChange={this.handleChange('address')}
+            />
+          </div>
+
+          <div className='date-picker-container'>
+            <div className='start-date-picker'>
+              <label>CHECK-IN</label>
+              <SingleDatePicker
+                date={this.state.startDate} 
+                onDateChange={startDate => this.setState({ startDate })} 
+                focused={this.state.focused1} 
+                onFocusChange={({ focused: focused1 }) => this.setState({ focused1 })}
+                id="start-date" 
+                numberOfMonths={1}
+                placeholder={'mm/dd/yyyy'}
+                readOnly={true}
+              />
+            </div>
+
+            <div className='end-date-picker'>
+              <label>CHECKOUT</label>
+              <SingleDatePicker
+                date={this.state.endDate} 
+                onDateChange={endDate => this.setState({ endDate })} 
+                focused={this.state.focused2} 
+                onFocusChange={({ focused: focused2 }) => this.setState({ focused2 })} 
+                id="end-date" 
+                numberOfMonths={1}
+                placeholder={'mm/dd/yyyy'}
+                readOnly={true}
+              />
+            </div>
+          </div>
+
+          <button className='search-submit' onClick={this.handleSubmit}>
+            Search
+          </button>
+
+        </form>
+      </div>
     )
   }
 }
 
-export default withRouter(SearchForm)
+export default withRouter(SearchForm);

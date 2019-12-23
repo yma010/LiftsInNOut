@@ -64,7 +64,7 @@ class ListingsMap extends React.Component {
     let { listings } = this.props;
 
     return(
-    <div id='map-container' ref={map => this.mapNode = map}></div>
+      <div id='map-container' ref={map => this.mapNode = map}></div>
     )
   }
 }

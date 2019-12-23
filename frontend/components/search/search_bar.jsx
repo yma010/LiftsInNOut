@@ -47,6 +47,7 @@ class SearchBar extends Component {
         <input type="text"
           id="searchbar-input"
           placeholder='Try "Los Angeles"'
+          autoC omplete='on'
         />
         <button onClick={this.setDestination}>Enter</button>
       </form>
