@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
 class SearchBar extends Component {
   constructor(props){
     super(props);
     this.state = {
       location: '',
-      latitude: null,
-      longitude: null
+      lat: null,
+      long: null
     }
     this.setDestination = this.setDestination.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -14,27 +14,29 @@ class SearchBar extends Component {
 
   componentDidMount(){
     const input = document.getElementById('searchbar-input');
-    console.log(input);
     this.autocomplete = new google.maps.places.Autocomplete(input);
-    this.autocomplete.addListener(input, this.setDestination);
+    this.autocomplete.addListener('place_changed', this.setDestination);
   }
 
   setDestination(){
     const destination = this.autocomplete.getPlace();
-    console.log(destination);
     this.setState({
       destination: destination.formatted_address,
-      latitude: destination.geometry.location.lat(),
-      longitude: destination.geometry.location.lng()
+      lat: destination.geometry.location.lat(),
+      long: destination.geometry.location.lng()
     })
-    this.handleSubmit(e);
+    this.handleSubmit();
   }
 
   handleSubmit(e) {
-    e.preventDefault();
-    const lat = this.state.latitude || 34.0522;
-    const lng = this.state.longitude || -118.2437;
-    const hash = `&lat=${lat}&lng=${lng}`
+    if(e){
+      e.preventDefault();
+    }
+    const lat = this.state.lat || 34.0522;
+    const lng = this.state.long || -118.2437;
+
+    const hash = `&lat=${lat}&long=${lng}&checkin=null&checkin=null`
+
     this.props.history.push({
       pathname: '/listings',
       hash: hash
@@ -43,14 +45,13 @@ class SearchBar extends Component {
 
   render(){
     return(
-      <form className='searchbar'>
-        <input type="text"
+      <div className='searchbar'>
+        <input 
+          type="text"
           id="searchbar-input"
           placeholder='Try "Los Angeles"'
-          autoC omplete='on'
         />
-        <button onClick={this.setDestination}>Enter</button>
-      </form>
+      </div>
     )
   }
 }
