@@ -47,8 +47,8 @@ class SearchForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    const lat = this.state.lat || 40.716880;
-    const long = this.state.long || -73.948810;
+    const lat = this.state.lat || 34.0522342;
+    const long = this.state.long || -118.2436849;
 
     let startDate;
     let endDate;
