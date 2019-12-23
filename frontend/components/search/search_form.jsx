@@ -80,11 +80,8 @@ class SearchForm extends React.Component {
       <div className='search-form-container'>
         <div className='welcome-message-container'>
           <h1 className='welcome-message'>
-            Whether you're a professional or an amateur athlete
+            Schedule a day at your perfect gym anywhere in the world
           </h1>
-          <h2>
-            You deserve to find a training facility perfectly suited to your needs.
-          </h2>
         </div>
 
         <form className='search-form'>
@@ -106,7 +103,8 @@ class SearchForm extends React.Component {
                 onDateChange={startDate => this.setState({ startDate })} 
                 focused={this.state.focused1} 
                 onFocusChange={({ focused: focused1 }) => this.setState({ focused1 })}
-                id="start-date" 
+                id="start-date"
+                className="date-input" 
                 numberOfMonths={1}
                 placeholder={'mm/dd/yyyy'}
                 readOnly={true}
@@ -121,6 +119,7 @@ class SearchForm extends React.Component {
                 focused={this.state.focused2} 
                 onFocusChange={({ focused: focused2 }) => this.setState({ focused2 })} 
                 id="end-date" 
+                className="date-input"
                 numberOfMonths={1}
                 placeholder={'mm/dd/yyyy'}
                 readOnly={true}
