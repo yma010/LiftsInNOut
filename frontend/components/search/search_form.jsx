@@ -80,7 +80,7 @@ class SearchForm extends React.Component {
       <div className='search-form-container'>
         <div className='welcome-message-container'>
           <h1 className='welcome-message'>
-            Schedule a day at your perfect gym anywhere in the world
+            Schedule your perfect day at your perfect gym anywhere
           </h1>
         </div>
 
@@ -122,6 +122,7 @@ class SearchForm extends React.Component {
                 className="date-input"
                 numberOfMonths={1}
                 placeholder={'mm/dd/yyyy'}
+                anchorDirection="right"
                 readOnly={true}
               />
             </div>
