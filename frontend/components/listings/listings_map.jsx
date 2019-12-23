@@ -58,8 +58,8 @@ class ListingsMap extends React.Component {
     google.maps.event.addListener(this.map, 'idle', () => {
       const directions = this.map.getBounds().toJSON();
       const bounds = {
-        northEast: { lat: directions.north, lng: directions.east },
-        southWest: { lat: directions.south, lng: directions.west }
+        northEast: { latitude: directions.north, longitude: directions.east },
+        southWest: { latitude: directions.south, longotude: directions.west }
       }
       this.props.updateFilter({
         "bounds": bounds,

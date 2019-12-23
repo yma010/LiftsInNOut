@@ -6,7 +6,7 @@ function ListingIndexItem({ listings }) {
     
   let listingsPhotos = listings.photoUrls.map(photo => {
     return(
-      <img src={photo}/>
+      <img key={Math.random()} src={photo}/>
     )
   })
 

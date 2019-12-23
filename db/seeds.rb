@@ -8,8 +8,18 @@
 
 #Generates Users
 require 'open-uri'
+require 'faker'
 
 User.destroy_all
+
+100.times do 
+  User.create(
+    fname: Faker::Games::ElderScrolls.first_name,
+    lname: Faker::Games::ElderScrolls.last_name,
+    email: Faker::Internet.email,
+    password: Faker::Games::ElderScrolls.creature
+  )
+end
 
 hunter = User.create!(
     fname: "Hunter", 
@@ -42,6 +52,8 @@ johnny = User.create!(
 Listing.destroy_all
 
 ##Generate Listings
+
+
 barbell = marvin.listings.create!( 
   host_id: marvin.id, 
   name: "Barbell Brigade", 
