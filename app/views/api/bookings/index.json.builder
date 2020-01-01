@@ -5,6 +5,7 @@
       if (booking.listing)
         json.set! 'listing' do
           json.extract! booking.listing, :id, :host_id, :title, :description, :location, :latitude, :longitude, :benches, :power_rack, :deadlift_platform
+          json.photoUrls booking.listing.photos.map { |file| url_for(file) }
         end
       end
     end

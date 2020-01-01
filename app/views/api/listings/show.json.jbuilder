@@ -10,7 +10,7 @@ json.bookings do
       json.extract! booking, :id, :user_id, :listing_id, :start_date, :end_date, :guests
       json.set! 'listing' do
         json.extract! booking.listing, :id, :name, :description, :price, :location, :longitude, :latitude, :benches, :power_rack, :deadlift_platform, :host_id
-        json.photoUrls @listing.pictures.map { |pic| pic.url }
+        json.photoUrls listing.photos.map { |file| url_for(file) }
       end
     end
   end
