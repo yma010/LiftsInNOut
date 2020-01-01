@@ -30,6 +30,22 @@ class Listing < ApplicationRecord
     foreign_key: :host_id,
     class_name: :User
 
+  has_many :bookings,
+    foreign_key: :listing_id,
+    class_name: :Booking
+
+  def booked_dates
+    arr = []
+    self.bookings.each do |booking|
+      curr_date = booking.start_date
+      end_date = booking.end_date
+      while curr_date <= end_date
+        arr << curr_date
+        curr_date += 1
+      end
+    end
+  end
+
   def self.in_bounds(bounds)
     self.where("latitude < ?", bounds[:northEast][:latitude])
         .where("latitude > ?", bounds[:southWest][:latitude])
