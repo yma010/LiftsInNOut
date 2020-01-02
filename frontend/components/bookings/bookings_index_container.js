@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
-import {fetchListings} from '../../actions/listing_actions';
+import { fetchListings } from '../../actions/listings_action';
 import {fetchBookings, deleteBooking} from '../../actions/booking_actions';
 import BookingIndex from './booking_index';
+
 
 const msp = (state, ownProps) => {
   let bookings = Object.values(state.entities.bookings);

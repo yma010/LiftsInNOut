@@ -1,4 +1,4 @@
-import {RECEIVE_LISTING} from '../actions/listing_actions';
+import {RECEIVE_LISTING} from '../actions/listings_action'
 import { RECEIVE_BOOKING, RECEIVE_BOOKINGS, RECEIVE_BOOKING_ERRORS, REMOVE_BOOKING} from '../actions/booking_actions';
 
 

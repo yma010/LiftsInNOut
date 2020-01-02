@@ -9,7 +9,7 @@ const NavBar = (props) => {
   <header>
    <Modal />
     <div className="navbar">
-      <div className="nav-logo" onClick={()=> props.history.push('/')}></div>
+      <div className="nav-logo" onClick={()=> props.history.push('/listings')}></div>
       <SearchBar />
       <NavContainer />
     </div>
