@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import NavBar from '../nav/nav_bar';
 import { Route, Link, withRouter } from 'react-router-dom';
 import BookingsIndexItem from './bookings_index_item'
