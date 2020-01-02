@@ -111,7 +111,7 @@ class Bookings extends Component {
     const endDateString = this.state.endDate && this.state.endDate.format('MM/DD/YYYY');
     return (
       <>
-      <div className="form-box">
+      <div className="booking-form-box">
         <div>
           <form onSubmit={this.handleSubmit}>
             <div>
@@ -140,7 +140,7 @@ class Bookings extends Component {
             <button type="button " id="remove-guest" onClick={this.removeGuest} className="remove-guest-light">-</button>
             <p>{this.state.guests}</p>
             <button type="button " id="add-guest" onClick={this.addGuest}>+</button>
-            <p className="max-guest-text">{`${this.props.listing.max_guests} guests maximum. Infants don't count towards number of guests.`}</p>
+            <p className="max-guest-text">{`${this.props.listing.max_guests} guests maximum.`}</p>
           </div>
 
         <div className={this.state.calShow ? "show-cal" : "hide-cal"}>
@@ -156,8 +156,6 @@ class Bookings extends Component {
             isDayBlocked={day1 => this.props.listing.booked_dates.some(day2 => day1.isSame(day2))}
           />
         </div>
-
-        
       </div>
       </>
     )
