@@ -12,14 +12,14 @@ require 'faker'
 
 User.destroy_all
 
-100.times do 
-  User.create(
-    fname: Faker::Games::ElderScrolls.first_name,
-    lname: Faker::Games::ElderScrolls.last_name,
-    email: Faker::Internet.email,
-    password: Faker::Games::ElderScrolls.creature
-  )
-end
+# 100.times do 
+#   User.create(
+#     fname: Faker::Games::ElderScrolls.first_name,
+#     lname: Faker::Games::ElderScrolls.last_name,
+#     email: Faker::Internet.email,
+#     password: Faker::Games::ElderScrolls.creature
+#   )
+# end
 
 hunter = User.create!(
     fname: "Hunter", 
