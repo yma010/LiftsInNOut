@@ -1,3 +1,41 @@
 // Place all the styles related to the api/bookings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.form-box{
+  display: flex;
+  position: absolute;
+  top: 75%;
+  left: 70vw;
+  border:1px solid rgb(235, 235, 235);
+  form {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.price {
+  flex-direction: row;
+  display: flex;
+}
+  .box-price {
+    font-weight: 800;
+  }
+
+  .day {
+    font-size: 1em;
+  }
+
+.show-cal {
+  display: block;
+  position: absolute;
+}
+
+.hide-cal {
+  display: none;
+}
+
+.guest-dropdown-content {
+  display: none;
+}

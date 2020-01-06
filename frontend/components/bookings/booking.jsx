@@ -1,51 +1,53 @@
-import React, { Component } from "react";
+
+import React from 'react';
 import { DayPickerRangeController, isInclusivelyAfterDay } from 'react-dates';
 import moment from 'moment';
-import { withRouter } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
 
-class Bookings extends Component {
+class Booking extends React.Component {
   constructor(props) {
-    super(props)
+    super(props) 
     this.state = {
       startDate: null,
       endDate: null,
-      focusedInput: startDate,
+      focusedInput: 'startDate',
       guests: 1,
       calShow: false,
-      showGuests: false
+      guestShow: false,
     }
+    this.openCalendar = this.openCalendar.bind(this);
+    this.closeCalendar = this.closeCalendar.bind(this);
+    this.addGuest = this.addGuest.bind(this);
+    this.removeGuest = this.removeGuest.bind(this);
+    this.validDate = this.validDate.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.toggleGuest = this.toggleGuest.bind(this);
   }
 
   openCalendar() {
-    this.setState({ calShow: true })
+    this.setState({calShow: true})
   }
 
   closeCalendar() {
-    this.setState({ calShow: false })
+    this.setState({calShow: false})
   }
 
-
-  removeGuests(e){
-    e.preventDefault();
-    if(this.state.guests > 1) {
-      let newGuests = this.state.guests - 1;
-      this.setState({guests: newGuests});
+  removeGuest(event) {
+    event.preventDefault();
+    if (this.state.guests > 1) {
+      let newGuests = this.state.guests - 1
+      this.setState({guests: newGuests})
     }
   }
-
-  addGuests(e) {
-    e.preventDefault();
+  
+  addGuest(event) {
+    event.preventDefault();
     if (this.state.guests <= this.props.listing.max_guests) {
       let newGuests = this.state.guests + 1;
       this.setState({ guests: newGuests });
     }
   }
-  //TODO refactor above into updateguests
-  // updateGuests(e){
-  //   e.preventDefault;
-    
-  // }
-
+  
   handleSubmit(e) {
     e.preventDefault();
     if (this.validDate()) {
@@ -57,12 +59,12 @@ class Bookings extends Component {
         end_date: this.state.endDate.format('YYYY-MM-DD'),
       }).then(() => this.props.history.replace(`/bookings`));
     } else {
-
+      
     }
   }
-
+  
   validDate() {
-    if (this.state.startDate === null) { return false };
+    if (this.state.startDate === null) {return false};
     let tripArr = [];
     let start = this.state.startDate;
     while (start.isBefore(this.state.endDate)) {
@@ -75,9 +77,10 @@ class Bookings extends Component {
       if (bookedDates.includes(date)) {
         valid = false;
       }
-    })
+    }) 
     return valid;
   }
+
 
   toggleGuest() {
     let dropdown = document.getElementById("guest-dropdown-content")
@@ -93,10 +96,10 @@ class Bookings extends Component {
       }
     }
   }
+
+
+  
   render() {
-    if (this.props.listing.booked_dates === undefined) {
-      return null;
-    }
 
     let guest = "guest";
     if (document.getElementById('remove-guest') !== null && this.state.guests > 1) {
@@ -111,11 +114,11 @@ class Bookings extends Component {
     const endDateString = this.state.endDate && this.state.endDate.format('MM/DD/YYYY');
     return (
       <>
-      <div className="booking-form-box">
+      <div className="form-box">
         <div>
           <form onSubmit={this.handleSubmit}>
-            <div>
-              <p className="box-price">${this.props.listing.price}</p><p className="box-per-night">per night</p>
+            <div className="price">
+                <p className="box-price">${this.props.listing.price}</p><p className="box-price day">&nbsp; per Day</p>
             </div>
 
             <p className="box-text">Dates</p>
@@ -140,7 +143,6 @@ class Bookings extends Component {
             <button type="button " id="remove-guest" onClick={this.removeGuest} className="remove-guest-light">-</button>
             <p>{this.state.guests}</p>
             <button type="button " id="add-guest" onClick={this.addGuest}>+</button>
-            <p className="max-guest-text">{`${this.props.listing.max_guests} guests maximum.`}</p>
           </div>
 
         <div className={this.state.calShow ? "show-cal" : "hide-cal"}>
@@ -153,13 +155,13 @@ class Bookings extends Component {
             focusedInput={this.state.focusedInput}
             isOutsideRange={day => isInclusivelyAfterDay(today, day)} 
             onOutsideClick={this.closeCalendar}
-            isDayBlocked={day1 => this.props.listing.booked_dates.some(day2 => day1.isSame(day2))}
           />
         </div>
+
+        
       </div>
       </>
     )
   }
-};
-
-export default withRouter(Bookings);
+}
+export default withRouter(Booking);

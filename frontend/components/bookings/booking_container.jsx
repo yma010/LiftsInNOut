@@ -7,7 +7,7 @@ const msp = (state, ownProps) => {
   const listing = ownProps.listing;
   let bookings;
   if (listing.bookings) {
-    bookings = Object.values(listing.bookings);
+    bookings = Object.values(listings.bookings);
   }
   let currUserId = state.session.id;
   return {bookings, currUserId};
