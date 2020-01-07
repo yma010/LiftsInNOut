@@ -130,7 +130,6 @@ class Booking extends React.Component {
 
               <p className="box-text">Guests</p>
                 <input readOnly type="number" value={`${this.state.guests}`} placeholder="1 guest" id="guest-dropdown" onClick={this.toggleGuest} />
-              <p className="guest-text-box-text">{guest}</p>
             </div>
     
             <button type="submit" className="box-submit">Reserve</button>

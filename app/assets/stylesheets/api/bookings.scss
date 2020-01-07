@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .form-box{
   display: flex;
-  position: absolute;
-  top: 75%;
-  left: 70vw;
+  position: fixed;
+  bottom: 5%;
+  left: 60%;
   border:1px solid rgb(235, 235, 235);
   form {
     padding-top: 5%;
@@ -36,6 +36,56 @@
   display: none;
 }
 
+.guest-dropdown-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
 .guest-dropdown-content {
   display: none;
+  box-sizing: border-box;
+  z-index: 10;
+  position: absolute;
+  height: 300px;
+  width: 323px;
+  background-color: white;
+  top: 165px;
+  height: 150px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.guest-dropdown-show {
+  display: block;
+  display: flex;
+}
+
+#remove-guest, #add-guest {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  
+  cursor: pointer;
+}
+
+.box-submit{
+  border: 0px none;
+  background: #ff5a5f;
+  width: 100%;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  box-sizing: border-box;
+  color: white;
 }

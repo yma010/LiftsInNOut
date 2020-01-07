@@ -109,24 +109,21 @@ img {
 }
 
 
-// .listings-show-container{
-//     margin-top: 100px;
-//     box-sizing: border-box;
-//     display: flex;
-//     // flex-wrap: wrap;
-//     flex-direction: column;
-//     line-height: 1.43;
-// }
+.listings-show-container{
+    margin-top: 5vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.43;
+    width: 100vw;
+    height: 100vh;
+}
 #listings-show.photo-container{
   margin-top: 100px;
   padding-bottom: 15px;
-  height: 440px
+  height: 440px;
 } 
 
-// .photo-subimages img {
-//   max-width:100%;
-//   max-height:100%;
-// }
 .photo-subimages {
   height: 200px;
   width: 300px;
