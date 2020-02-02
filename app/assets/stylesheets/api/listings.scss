@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 *{
   box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
 }
 
 .listings-index-header{
@@ -18,7 +20,7 @@
 }
 
 .listings-index{
-  margin-top: 100px;
+  margin-top: 7%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
@@ -27,8 +29,8 @@
 }
 
 .listings-index-ul{
-  width: 800px;
-  height: 200px;
+  width: 100%;
+  height: 12.5%;
 }.listings-index-item {
     display: flex;
     position: relative;
@@ -38,7 +40,7 @@
     flex-direction: column;
     border:1px solid rgb(235, 235, 235);
     border-radius: 4px;
-    width: 100%;
+    width: 60%;
     height: 100%;
     padding-left: 8px;
     padding-right: 8px;
@@ -52,8 +54,8 @@
   }
   .listing-index-item-photo-container{
     border:1px solid rgb(235, 235, 235);
-    height: 190px;
-    width: 300px;
+    min-height: 50%;
+    width: 50%;
     border-radius: 4px;
     margin-top: auto;
     margin-bottom: auto;
@@ -98,7 +100,8 @@ img {
 }
 
 .listings-index-map{
-  position: absolute !important;
+  margin-top: 0;
+  position: fixed !important;
   display: block !important;
   right: 0px !important;
   height: calc(100vh - 128px) !important;
@@ -109,24 +112,21 @@ img {
 }
 
 
-// .listings-show-container{
-//     margin-top: 100px;
-//     box-sizing: border-box;
-//     display: flex;
-//     // flex-wrap: wrap;
-//     flex-direction: column;
-//     line-height: 1.43;
-// }
+.listings-show-container{
+    margin-top: 5vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.43;
+    width: 100vw;
+    height: 100vh;
+}
 #listings-show.photo-container{
   margin-top: 100px;
   padding-bottom: 15px;
-  height: 440px
+  height: 440px;
 } 
 
-// .photo-subimages img {
-//   max-width:100%;
-//   max-height:100%;
-// }
 .photo-subimages {
   height: 200px;
   width: 300px;
@@ -167,6 +167,11 @@ img {
   filter: brightness(100%);
   transition: transform 0.7s;
   transform: scale(1.08);
+}
+
+.listings-index-photo{
+  object-fit: cover; 
+
 }
 
 .sub-column {

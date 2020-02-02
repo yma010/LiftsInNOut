@@ -6,18 +6,28 @@ function ListingIndexItem({ listings }) {
     
   let listingsPhotos = listings.photoUrls.map(photo => {
     return(
-      <img key={Math.random()} src={photo}/>
+      <img className="listings-index-photo" key={Math.random()} src={photo}/>
     )
   })
+
+
 
   return(
     <li className="listings-index-item">
       <div className="listings-index-item-details">
 
         <div className='listing-index-item-photo-container'>
-          <Carousel width={"300px"} heightMode={"first"} wrapAround={true} dragging={true}>
+          <Carousel
+            wrapAround={true}
+            width={"100%"}
+            swiping={true}
+            heightMode={"first"}
+            cellAlign={"center"}
+            framePadding='25px'
+            autoGenerateStyleTag={false}
+          >
             {listingsPhotos}
-          </Carousel>
+          </Carousel> 
         </div>
 
 

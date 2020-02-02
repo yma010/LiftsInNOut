@@ -20,7 +20,7 @@ const Nav = ({ currentUser, logout, login, signup}) => {
       <button className="nav-button"> Trips </button>
       <button className="nav-button"> Messages </button>
       <button className="nav-button"> Help </button> */}
-      <button className="nav-button" onClick={logout}>Log Out</button>
+      <button className="session-button" onClick={logout}>Log Out</button>
     </nav>
    
   );
