@@ -7,7 +7,6 @@ export const DatePickerWrapper = () => {
   const [endDate, setEndDate] = useState(null);
   const [focused1, setFocused1] = useState(false);
   const [focused2, setFocused2] = useState(false);
-
   return(
     <div className='date-picker-container'>
       <div className='start-date-picker'>

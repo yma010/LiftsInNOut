@@ -11,15 +11,10 @@ import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 export const Bookings = ({listings}) => {
   const dispatch = useDispatch();
   const currUser = useSelector(state => state.session.id);
-  const bookingForm = {
-    guests: 1, 
-    startDate: null, 
-    endDate: null,
-    focused1: false,
-    focused2: false
-  }
-  const [guests, setGuests] = useState(1);
 
+  const [guests, setGuests] = useState(1);
+  const [price, setPrice] = useState(null)
+  
 
   const newBooking = (booking) => {
     dispatch(createBooking(booking))
@@ -50,6 +45,10 @@ export const Bookings = ({listings}) => {
             <div className="butt-animation">
               <button className="guest-button"> <FontAwesomeIcon icon={faMinus} /> </button>
             </div>
+          </div>
+          {/* logic to handle pricing */}
+          <div className="cost container">
+            Price
           </div>
         <div className="border"></div>
         <button className="button-submit"> Reserve </button>
