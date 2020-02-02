@@ -27,12 +27,18 @@ export const Bookings = ({listings}) => {
   console.log(guests)
   return(
     <div className="bookings-container">
+      <div className="bookings-listing-price">
+        ${listings.price} <p className="price-per-day"> per day</p>
+      </div>
+      <div className="border"></div>
       <form onSubmit={newBooking}>
+        <label className="date-label">Dates </label>
         <DatePickerWrapper/>
         <div className="booking-dates-container">
 
         </div>
         {/* Regarding Guest State */}
+        <label className='guest-label'>Guests </label>
           <div className="guests-button-container">
             <div className="butt-animation">
               <button className="guest-button"> <FontAwesomeIcon icon={faPlus}/> </button>
@@ -42,7 +48,7 @@ export const Bookings = ({listings}) => {
               <button className="guest-button"> <FontAwesomeIcon icon={faMinus} /> </button>
             </div>
           </div>
-
+        <button className="button-submit"> Reserve </button>
       </form>
     </div>
   )

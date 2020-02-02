@@ -18,7 +18,6 @@ export const DatePickerWrapper = () => {
           focused={focused1} 
           onFocusChange={() => setFocused1(!focused1)}
           id="start-date"
-          className="date-input" 
           numberOfMonths={1}
           placeholder={'mm/dd/yyyy'}
           readOnly={true}
@@ -33,7 +32,6 @@ export const DatePickerWrapper = () => {
           focused={focused2} 
           onFocusChange={() => setFocused2(!focused2)} 
           id="end-date" 
-          className="date-input"
           numberOfMonths={1}
           placeholder={'mm/dd/yyyy'}
           anchorDirection="right"
