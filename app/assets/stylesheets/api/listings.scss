@@ -20,7 +20,7 @@
 }
 
 .listings-index{
-  margin-top: 10%;
+  margin-top: 7%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
@@ -40,7 +40,7 @@
     flex-direction: column;
     border:1px solid rgb(235, 235, 235);
     border-radius: 4px;
-    width: 100%;
+    width: 60%;
     height: 100%;
     padding-left: 8px;
     padding-right: 8px;
@@ -55,7 +55,7 @@
   .listing-index-item-photo-container{
     border:1px solid rgb(235, 235, 235);
     min-height: 50%;
-    width: 25%;
+    width: 50%;
     border-radius: 4px;
     margin-top: auto;
     margin-bottom: auto;
@@ -100,7 +100,8 @@ img {
 }
 
 .listings-index-map{
-  position: absolute !important;
+  margin-top: 0;
+  position: fixed !important;
   display: block !important;
   right: 0px !important;
   height: calc(100vh - 128px) !important;
