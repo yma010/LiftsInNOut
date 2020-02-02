@@ -5,12 +5,22 @@ import Carousel from 'nuka-carousel';
 function ListingIndexItem({ listings }) {
     
   let listingsPhotos = listings.photoUrls.map(photo => {
-    return(
-      <img className="listings-index-photo" key={Math.random()} src={photo}/>
-    )
+    let key = 0;
+    const handleImage = () => {
+      window.dispatchEvent(new Event('resize'))
+    }
+
+
+    if(key === 0){
+      key +=1
+      return <img onLoad={handleImage} className="listings-index-photo" key={key} src={photo} />
+      
+    } else{
+      key +=1
+      return <img className="listings-index-photo" key={key} src={photo}/>
+    }
+    
   })
-
-
 
   return(
     <li className="listings-index-item">
@@ -19,12 +29,9 @@ function ListingIndexItem({ listings }) {
         <div className='listing-index-item-photo-container'>
           <Carousel
             wrapAround={true}
-            width={"100%"}
+            width={"300px"}
             swiping={true}
             heightMode={"first"}
-            cellAlign={"center"}
-            framePadding='25px'
-            autoGenerateStyleTag={false}
           >
             {listingsPhotos}
           </Carousel> 

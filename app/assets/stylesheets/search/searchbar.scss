@@ -1,16 +1,15 @@
 .searchbar{
   left: 100px;
   border: 1px solid #ffffff !important;
-  border-radius: 8px 0 0 8px !important;
-  border-right: none !important;
+  border-radius: 8px;
   padding: 0px !important;
   padding-left: 12px !important;
   vertical-align: middle !important;
   position: fixed !important;
   height: 48px !important;
   width: 100% !important;
-  max-width: 700px !important;
-  min-width: 500px !important;
+  max-width: 75vh !important;
+  min-width: 60vh !important;
   background: #ffffff !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16) !important;
   } #searchbar-input {
@@ -19,10 +18,15 @@
   background-color: transparent !important;
   border: 0px !important;
   margin: 0px !important;
-  padding: 0px !important;
+  padding: 0px;
+  padding-left: 40px;
   width: 100% !important;
   text-overflow: ellipsis !important;
   font-weight: 800 !important;
   font-size: 16px !important;
-  color: #484848 !important
+  color: #484848 !important;
+  background-image:  url('search-solid.svg');
+  background-position: 0px 10px;
+  background-repeat: no-repeat;
+  background-size: 24px;
 }

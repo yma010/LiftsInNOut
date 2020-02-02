@@ -7,7 +7,7 @@
   position: absolute;
   color: rgb(72, 72, 72) !important;
   background: white;
-  bottom: calc(70vh - 100vh);
+  bottom: calc(55vh - 100vh);
   left: 65%;
   width: 30%;
   z-index: 3;
@@ -88,10 +88,13 @@
   padding-top: 3%;
   padding-bottom: 3%;
   .guests-val{
-    font-size: 3vh;
-    padding-top: 2px;
-    padding-left: 33%;
-    padding-right: 5px;
+    border: none;
+    text-align: center;
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin:0;
   }
   .guests-label{
     padding-top: 2px;
