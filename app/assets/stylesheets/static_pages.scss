@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   height: 100vh;
@@ -33,35 +40,51 @@ button {
 
 .navbar {
   display: flex;
+  background: white;
+  color: #484848;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  
   padding-bottom: 6px;
   padding-top: 5px;
   padding-left: 25px;
   padding-right: 25px;
-  height: 70px;
-  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  
   z-index: 10;
   top: 0;
-  background: white;
-  border-bottom: 1px solid #e4e4e4;
-  align-items: center;
-  color: #484848;
   font-family: CircularStd, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: 400;
   position: fixed;
-} nav {
-  height: inherit;
-  display: flex;
-  flex-direction: row;
+  .session-button {
+    font-size: 14px;
+    border: none;
+    height: inherit;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #484848;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .session-button:hover {
+    padding-top: 26px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #484848;
+    cursor: pointer;
+  }
 }  
 .navbar-splash {
   display: flex;
   justify-content: space-between;
   padding-bottom: 6px;
-  padding-top: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 70px;
+  padding-top: 15px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 6vw;
   width: 100%;
   z-index: 10;
   top: 0;
@@ -72,31 +95,20 @@ button {
   position: fixed;
 } .session-button-splash{
   color: white;
-  font-size: 14px;
+  font-size: 1em;
   border: none;
   height: inherit;
   text-align: center;
   margin: 0;
   text-decoration: none;
+  
 } .session-button-splash:hover{
-  padding-top: 3px;
+  padding-top: 2.9vh;
+  padding-bottom: 2.8vh;
   border-bottom: 2px solid white;
   cursor: pointer;
   }
 
-.nav-button {
-    font-size: 14px;
-    border: none;
-    height: inherit;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-    color: #484848;
-} .nav-button:hover{
-    padding-top: 2px;
-    border-bottom: 2px solid #484848;
-    cursor: pointer;
-  }
 
 .nav-logo{
   background-image: image_url("lifts_in_n_out_logo.png");
@@ -108,17 +120,23 @@ button {
 
 .splash-home {
   background-image: image_url("curtis-macnewton-5rKPeFcsSTY-unsplash.jpg");
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  /* Preserve aspet ratio */
+  /* Preserve aspect ratio */
   min-width: 100%;
   min-height: 100%;
 }
+
+// @media only screen and (min-width: 375px) {
+//   .splash-home{
+//     background-size: 100%;
+//   }
+// }
 
 .bg-credit {
   display: none;

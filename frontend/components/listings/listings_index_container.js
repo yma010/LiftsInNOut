@@ -14,7 +14,6 @@ const mdp = dispatch => ({
 });
 
 export default connect(
-  msp,
-  mdp
+  msp, null
 )(ListingsIndex);
 
