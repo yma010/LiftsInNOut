@@ -40,27 +40,41 @@ button {
 
 .navbar {
   display: flex;
+  background: white;
+  color: #484848;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  
   padding-bottom: 6px;
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 25px;
   padding-right: 25px;
+  border-bottom: 1px solid #e4e4e4;
   
-  height: 15vh;
-  width: 100%;
   z-index: 10;
   top: 0;
-  background: white;
-  border-bottom: 1px solid #e4e4e4;
-  align-items: center;
-  color: #484848;
   font-family: CircularStd, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-weight: 400;
   position: fixed;
-  .nav {
+  .session-button {
+    font-size: 14px;
+    border: none;
     height: inherit;
-    display: flex;
-    flex-direction: row;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #484848;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .session-button:hover {
+    padding-top: 26px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #484848;
+    cursor: pointer;
   }
 }  
 .navbar-splash {
@@ -95,20 +109,6 @@ button {
   cursor: pointer;
   }
 
-.nav-button {
-    font-size: 14px;
-    border: none;
-    height: inherit;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-    color: #484848;
-} .nav-button:hover{
-    padding-top: 2.9vh;
-    padding-bottom: 2.8vh;
-    border-bottom: 2px solid #484848;
-    cursor: pointer;
-  }
 
 .nav-logo{
   background-image: image_url("lifts_in_n_out_logo.png");
