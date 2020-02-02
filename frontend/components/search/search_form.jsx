@@ -3,7 +3,7 @@ import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
 import moment from 'moment';
 import { withRouter } from 'react-router-dom';
-
+import { DatePickerWrapper } from '../calender/calender';
 class SearchForm extends React.Component {
   constructor(props) {
     super(props);
@@ -94,40 +94,7 @@ class SearchForm extends React.Component {
               onChange={this.handleChange('address')}
             />
           </div>
-
-          <div className='date-picker-container'>
-            <div className='start-date-picker'>
-              <label>CHECK-IN</label>
-              <SingleDatePicker
-                date={this.state.startDate} 
-                onDateChange={startDate => this.setState({ startDate })} 
-                focused={this.state.focused1} 
-                onFocusChange={({ focused: focused1 }) => this.setState({ focused1 })}
-                id="start-date"
-                className="date-input" 
-                numberOfMonths={1}
-                placeholder={'mm/dd/yyyy'}
-                readOnly={true}
-              />
-            </div>
-
-            <div className='end-date-picker'>
-              <label>CHECKOUT</label>
-              <SingleDatePicker
-                date={this.state.endDate} 
-                onDateChange={endDate => this.setState({ endDate })} 
-                focused={this.state.focused2} 
-                onFocusChange={({ focused: focused2 }) => this.setState({ focused2 })} 
-                id="end-date" 
-                className="date-input"
-                numberOfMonths={1}
-                placeholder={'mm/dd/yyyy'}
-                anchorDirection="right"
-                readOnly={true}
-              />
-            </div>
-          </div>
-
+        <DatePickerWrapper/>
           <button className='search-submit' onClick={this.handleSubmit}>
             Search
           </button>

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import { DayPickerRangeController, isInclusivelyAfterDay } from 'react-dates';
-import moment from 'moment';
+import {DatePickerWrapper} from '../calender/calender';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { createBooking } from '../../actions/booking_actions';
 
@@ -13,8 +13,9 @@ export const Bookings = ({listings}) => {
   const currUser = useSelector(state => state.session.id);
   const bookingForm = {
     guests: 1, 
-    startDate: '', 
-    endDate: '',
+    startDate: null, 
+    endDate: null,
+    focused: false
   }
   const [guests, setGuests] = useState(1);
 
@@ -27,11 +28,9 @@ export const Bookings = ({listings}) => {
   return(
     <div className="bookings-container">
       <form onSubmit={newBooking}>
-
-        {/* Regarding Dates */}
-
+        <DatePickerWrapper/>
         <div className="booking-dates-container">
-          
+
         </div>
         {/* Regarding Guest State */}
           <div className="guests-button-container">
