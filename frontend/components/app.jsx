@@ -4,26 +4,20 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-
-import Modal from './modals/modal'
-import GreetingContainer from './greetings/greetings_container'
-// import LoginFormContainer from './session_forms/login_form_container';
-// import SignupFormContainer from './session_forms/signup_form_container';
+import ListingShowContainer from './listings/listings_show_container';
+import SearchContainer from './search/search_container'
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
-
+import Splash from './splash/splash';
+import bookings_index_container from './bookings/bookings_index_container';
 const App = () => (
-  <div>
-    <Modal/>
-    <header className="navbar">
-      <div className="nav-logo"></div>
-      {/* PLACE HOLDER FOR SEARCH BAR */}
-      <GreetingContainer />
-    </header>
-    <Switch>
+    <main>
+      <Route exact path ="/" component={Splash}/>
+      <Route exact path="/listings" component={SearchContainer} />
+      <Route path="/listings/:listingId" component={ListingShowContainer} />
+      <Route path="/bookings" component={bookings_index_container} />
       {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute  exact path="/signup" component={SignupFormContainer} /> */}
-    </Switch>
-  </div>
+    </main>
 );
 
 export default App;

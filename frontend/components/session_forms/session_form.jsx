@@ -35,14 +35,14 @@ class SessionForm extends React.Component {
   }
 
   renderDemo() {
-    return this.props.formType === "login" ? (
+    return (
       <input
         className="demo-login"
         onClick={this.handleDemo}
         type="submit"
         value="Demo Login"
       />
-    ) : null
+    )
   }
 
   render() {
@@ -71,6 +71,9 @@ class SessionForm extends React.Component {
             <span className='button-text'> Sign up </span>
           </button>
           <div className='button-border'></div>
+          {this.renderDemo()}
+          <div className='button-border'></div>
+          <div className='button-border'></div>
         </div >
       } else {
         message = "Don't have an account?"
@@ -96,7 +99,6 @@ class SessionForm extends React.Component {
         </div>
       }
 
-    // debugger;
     let errors = this.props.errors.map((error, idx) => <li key={idx}>{error}</li>);
 
     return (

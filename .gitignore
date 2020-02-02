@@ -2,3 +2,5 @@ node_modules/
 bundle.js
 bundle.js.map
 .eslintrc.json
+tmp/
+log/
