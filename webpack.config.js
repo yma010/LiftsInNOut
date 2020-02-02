@@ -10,9 +10,11 @@ module.exports = {
   module: {
     rules: [{
       test: /\.jsx?$/,
+      test: /\.svg?$/,
       exclude: /(node_modules)/,
       use: {
         loader: 'babel-loader',
+        loader: 'svg-inline-loader?classPrefix',
         query: {
           presets: ['@babel/env', '@babel/react']
         }

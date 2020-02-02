@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import NavBar from '../nav/nav_bar'
 import ListingsPhoto from "./listings_photos";
-import BookingsContainer from '../bookings/booking_container';
+import {Bookings} from '../bookings/booking';
 class ListingShow extends React.Component {
   constructor(props){
     super(props)
@@ -32,6 +32,7 @@ class ListingShow extends React.Component {
     return (
       <div>
         <NavBar/>
+        <Bookings listings={listing} />
         <div className='listings-show-container'>
           <ListingsPhoto listings={listing} />
           <div className='listings-show-details'>
@@ -47,7 +48,6 @@ class ListingShow extends React.Component {
               About
               </div>
             <p>{listing.description}</p>
-            <BookingsContainer listing={this.props.listing}/>
             <div className="border"> </div>
             <Link to="/listings">Back to Index</Link>
           </div>
