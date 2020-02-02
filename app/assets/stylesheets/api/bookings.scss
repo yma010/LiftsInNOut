@@ -7,11 +7,15 @@
   position: absolute;
   color: rgb(72, 72, 72) !important;
   background: white;
-  bottom: calc(75vh - 100vh);
+  bottom: calc(70vh - 100vh);
   left: 65%;
   width: 30%;
   z-index: 3;
   border:1px solid rgb(235, 235, 235);
+  border-radius: 4px;
+  p {
+      text-align: center;
+  }
   form {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -29,6 +33,7 @@
     margin-bottom: 0;
     margin-left: 38px;
     margin-right: 38px;
+
   }
   
   .date-picker-container{
@@ -36,16 +41,24 @@
     padding-top: 3%;
     padding-bottom: 3%;
     .start-date-picker {
+      label{
+        font-size: 0 !important;
+      }
       color:transparent;
       font-size: 0;
+      border-radius: 4px;
       border-top: 1px solid #EBEBEB;
       border-left: 1px solid #EBEBEB;
       border-bottom: 1px solid #EBEBEB;
       border-radius: 2px !important;
     }
     .end-date-picker {
+      label {
+        font-size: 0 !important;
+      }
       color:transparent;
       font-size: 0;
+      border-radius: 4px;
       border-top: 1px solid #EBEBEB;
       border-right: 1px solid #EBEBEB;
       border-bottom: 1px solid #EBEBEB;
@@ -69,9 +82,6 @@
   }
 }
 
-.guest-label {
-}
-
 .guests-button-container{
   display: flex;
   flex-direction: row;
@@ -80,8 +90,8 @@
   .guests-val{
     font-size: 3vh;
     padding-top: 2px;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-left: 33%;
+    padding-right: 5px;
   }
   .guests-label{
     padding-top: 2px;
@@ -100,15 +110,31 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  .butt-animation:hover {
+  }.guest-button:hover{
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 4px,
-                rgb(113, 113, 113) 0px 0px 0px 5px,
-                rgba(255, 255, 255, 0.5) 0px 0px 0px 6px; 
+    rgb(113, 113, 113) 0px 0px 0px 5px,
+    rgba(255, 255, 255, 0.5) 0px 0px 0px 6px;
     border-radius: 50%;
     transition: box-shadow 0.2s ease 0s;
   }
+  .guest-val-container{
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    width: 80%;
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  // .butt-animation:hover {
+  //   position: absolute;
+  //   z-index: 3;
+  //   box-shadow: rgb(255, 255, 255) 0px 0px 0px 4px,
+  //               rgb(113, 113, 113) 0px 0px 0px 5px,
+  //               rgba(255, 255, 255, 0.5) 0px 0px 0px 6px; 
+  //   border-radius: 50%;
+  //   transition: box-shadow 0.2s ease 0s;
+  // }
 
 }
 

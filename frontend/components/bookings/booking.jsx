@@ -15,7 +15,8 @@ export const Bookings = ({listings}) => {
     guests: 1, 
     startDate: null, 
     endDate: null,
-    focused: false
+    focused1: false,
+    focused2: false
   }
   const [guests, setGuests] = useState(1);
 
@@ -43,12 +44,16 @@ export const Bookings = ({listings}) => {
             <div className="butt-animation">
               <button className="guest-button"> <FontAwesomeIcon icon={faPlus}/> </button>
             </div>
+            <div className="guest-val-container">
               <p className="guests-val">{guests}</p><p className="guests-label">Guest(s)</p>
+            </div>
             <div className="butt-animation">
               <button className="guest-button"> <FontAwesomeIcon icon={faMinus} /> </button>
             </div>
           </div>
+        <div className="border"></div>
         <button className="button-submit"> Reserve </button>
+        <p>You won't be charged just yet</p>
       </form>
     </div>
   )
