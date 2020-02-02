@@ -35,14 +35,14 @@ class SessionForm extends React.Component {
   }
 
   renderDemo() {
-    return this.props.formType === "login" ? (
+    return (
       <input
         className="demo-login"
         onClick={this.handleDemo}
         type="submit"
         value="Demo Login"
       />
-    ) : null
+    )
   }
 
   render() {
@@ -70,6 +70,9 @@ class SessionForm extends React.Component {
           <button className='modal-submit'>
             <span className='button-text'> Sign up </span>
           </button>
+          <div className='button-border'></div>
+          {this.renderDemo()}
+          <div className='button-border'></div>
           <div className='button-border'></div>
         </div >
       } else {

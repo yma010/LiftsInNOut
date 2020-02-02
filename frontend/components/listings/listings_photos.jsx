@@ -3,7 +3,6 @@ import React from "react";
 class ListingsPhoto extends React.Component {
 
   render(){
-    // debugger;
     const { listings } = this.props;
 
 

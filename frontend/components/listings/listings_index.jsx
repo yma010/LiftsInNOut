@@ -2,8 +2,9 @@ import React from 'react';
 import ListingIndexItem from './listings_index_item';
 
 class ListingsIndex extends React.Component {
-  componentDidMount() {
-    this.props.fetchListings()
+  
+  componentDidMount(){
+    window.scrollTo(0,0)
   }
 
   render() {
