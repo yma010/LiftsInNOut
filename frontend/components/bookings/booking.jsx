@@ -1,166 +1,63 @@
 
-import React from 'react';
-import { DayPickerRangeController, isInclusivelyAfterDay } from 'react-dates';
+import React, { useState, useEffect } from 'react';
+import {DatePickerWrapper} from '../calender/calender';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { createBooking } from '../../actions/booking_actions';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
-import { withRouter } from 'react-router-dom';
 
-class Booking extends React.Component {
-  constructor(props) {
-    super(props) 
-    this.state = {
-      startDate: null,
-      endDate: null,
-      focusedInput: 'startDate',
-      guests: 1,
-      calShow: false,
-      guestShow: false,
-    }
-    this.openCalendar = this.openCalendar.bind(this);
-    this.closeCalendar = this.closeCalendar.bind(this);
-    this.addGuest = this.addGuest.bind(this);
-    this.removeGuest = this.removeGuest.bind(this);
-    this.validDate = this.validDate.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.toggleGuest = this.toggleGuest.bind(this);
-  }
-
-  openCalendar() {
-    this.setState({calShow: true})
-  }
-
-  closeCalendar() {
-    this.setState({calShow: false})
-  }
-
-  removeGuest(event) {
-    event.preventDefault();
-    if (this.state.guests > 1) {
-      let newGuests = this.state.guests - 1
-      this.setState({guests: newGuests})
-    }
-  }
+export const Bookings = ({listings}) => {
+  const dispatch = useDispatch();
+  const currUser = useSelector(state => state.session.id);
+  const [startDate, endDate] = useSelector(state => {
+    console.log(state)
+    return ([state.startDate, state.endDate]);
+  })
+  const [guests, setGuests] = useState(1);
+  const [price, setPrice] = useState(null)
   
-  addGuest(event) {
-    event.preventDefault();
-    if (this.state.guests <= this.props.listing.max_guests) {
-      let newGuests = this.state.guests + 1;
-      this.setState({ guests: newGuests });
-    }
-  }
+
+  const newBooking = (booking) => {
+    dispatch(createBooking(booking))
+  };
   
-  handleSubmit(e) {
-    e.preventDefault();
-    if (this.validDate()) {
-      this.props.createBooking({
-        user_id: this.props.currentUserId,
-        listing_id: this.props.listing.id,
-        num_guests: this.state.guests,
-        start_date: this.state.startDate.format('YYYY-MM-DD'),
-        end_date: this.state.endDate.format('YYYY-MM-DD'),
-      }).then(() => this.props.history.replace(`/bookings`));
-    } else {
-      
-    }
-  }
-  
-  validDate() {
-    if (this.state.startDate === null) {return false};
-    let tripArr = [];
-    let start = this.state.startDate;
-    while (start.isBefore(this.state.endDate)) {
-      tripArr.push(start.format('YYYY-MM-DD'));
-      start = start.add(1, 'day')
-    }
-    const bookedDates = this.props.listing.booked_dates;
-    let valid = true;
-    tripArr.forEach(date => {
-      if (bookedDates.includes(date)) {
-        valid = false;
-      }
-    }) 
-    return valid;
-  }
-
-
-  toggleGuest() {
-    let dropdown = document.getElementById("guest-dropdown-content")
-    dropdown.classList.toggle("guest-dropdown-show")
-
-    window.onClick = function (e) {
-      e.preventDefault();
-      if (!e.target.matches(".guest-dropdown-container") && !e.target.matches(".guest-dropdown-content") && !e.target.matches(".buttons")) {
-        let dropdowns = document.getElementsByClassName("guest-dropdown-content")[0];
-        if (dropdowns.classList.contains('guest-dropdown-show')) {
-          dropdowns.classList.remove('guest-dropdown-show');
-        }
-      }
-    }
-  }
-
-
-  
-  render() {
-
-    let guest = "guest";
-    if (document.getElementById('remove-guest') !== null && this.state.guests > 1) {
-      guest = "guests";
-      document.getElementById('remove-guest').classList.add("remove-guest-outline")
-    } else if (document.getElementById('remove-guest') !== null && this.state.guests === 1) {
-      document.getElementById('remove-guest').classList.remove("remove-guest-outline")
-    }
-
-    const today = moment();
-    const startDateString = this.state.startDate && this.state.startDate.format('MM/DD/YYYY');
-    const endDateString = this.state.endDate && this.state.endDate.format('MM/DD/YYYY');
-    return (
-      <>
-      <div className="form-box">
-        <div>
-          <form onSubmit={this.handleSubmit}>
-            <div className="price">
-                <p className="box-price">${this.props.listing.price}</p><p className="box-price day">&nbsp; per Day</p>
-            </div>
-
-            <p className="box-text">Dates</p>
-            <input className="box-check-in-dates" value={startDateString ? startDateString : ""} type="text" placeholder="Check-in" onClick={this.openCalendar} readOnly />
-              <input className="box-check-out-dates" value={endDateString ? endDateString : ""} type="text" placeholder="→    Check-out" onClick={this.openCalendar} readOnly/>
-            
-
-            <div className="guest-dropdown-container" >
-
-              <p className="box-text">Guests</p>
-                <input readOnly type="number" value={`${this.state.guests}`} placeholder="1 guest" id="guest-dropdown" onClick={this.toggleGuest} />
-            </div>
-    
-            <button type="submit" className="box-submit">Reserve</button>
-            <p className="box-bottom-text">You won't be charged yet</p>
-          </form>
-
-        </div>
-          <div id="guest-dropdown-content" className="guest-dropdown-content">
-            <p>Guests</p>
-            <button type="button " id="remove-guest" onClick={this.removeGuest} className="remove-guest-light">-</button>
-            <p>{this.state.guests}</p>
-            <button type="button " id="add-guest" onClick={this.addGuest}>+</button>
-          </div>
-
-        <div className={this.state.calShow ? "show-cal" : "hide-cal"}>
-          <DayPickerRangeController
-            startDate={this.state.startDate}
-            endDate={this.state.endDate}
-            numberOfMonths={1}
-            onFocusChange={focusedInput => this.setState({ focusedInput})}
-            onDatesChange={({ startDate, endDate }) => this.setState({ startDate, endDate })}
-            focusedInput={this.state.focusedInput}
-            isOutsideRange={day => isInclusivelyAfterDay(today, day)} 
-            onOutsideClick={this.closeCalendar}
-          />
-        </div>
-
-        
+  console.log(guests)
+  return(
+    <div className="bookings-container">
+      <div className="bookings-listing-price">
+        ${listings.price} <p className="price-per-day"> per day</p>
       </div>
-      </>
-    )
-  }
+      <div className="border"></div>
+      <form onSubmit={newBooking}>
+        <label className="date-label">Dates </label>
+        <DatePickerWrapper/>
+        <div className="booking-dates-container">
+
+        </div>
+        {/* Regarding Guest State */}
+        <label className='guest-label'>Guests </label>
+          <div className="guests-button-container">
+            <div className="butt-animation">
+              <button className="guest-button"> <FontAwesomeIcon icon={faPlus}/> </button>
+            </div>
+            <div className="guest-val-container">
+              <input type='number' defaultValue={guests} className="guests-val"></input><p className="guests-label">Guest(s)</p>
+            </div>
+            <div className="butt-animation">
+              <button className="guest-button"> <FontAwesomeIcon icon={faMinus} /> </button>
+            </div>
+          </div>
+          {/* logic to handle pricing */}
+          {/* <div className="cost container">
+            Total Cost: {price * }
+          </div> */}
+        <div className="border"></div>
+        <button className="button-submit"> Reserve </button>
+        <p>You won't be charged just yet</p>
+      </form>
+    </div>
+  )
 }
-export default withRouter(Booking);

@@ -1,80 +1,149 @@
 // Place all the styles related to the api/bookings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.form-box{
+.bookings-container{
   display: flex;
-  position: fixed;
-  bottom: 5%;
-  left: 60%;
+  flex-direction: column;
+  position: absolute;
+  color: rgb(72, 72, 72) !important;
+  background: white;
+  bottom: calc(55vh - 100vh);
+  left: 65%;
+  width: 30%;
+  z-index: 3;
   border:1px solid rgb(235, 235, 235);
+  border-radius: 4px;
+  p {
+      text-align: center;
+  }
   form {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
   }
-}
 
-.price {
-  flex-direction: row;
-  display: flex;
-}
-  .box-price {
-    font-weight: 800;
+  label {
+    font-size: small;
+    font-weight: bold;
   }
 
-  .day {
-    font-size: 1em;
+  .border{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 38px;
+    margin-right: 38px;
+
   }
-
-.show-cal {
-  display: block;
-  position: absolute;
-}
-
-.hide-cal {
-  display: none;
-}
-
-.guest-dropdown-container {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.guest-dropdown-content {
-  display: none;
-  box-sizing: border-box;
-  z-index: 10;
-  position: absolute;
-  height: 300px;
-  width: 323px;
-  background-color: white;
-  top: 165px;
-  height: 150px;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.guest-dropdown-show {
-  display: block;
-  display: flex;
-}
-
-#remove-guest, #add-guest {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  margin-top: 10px;
   
-  cursor: pointer;
+  .date-picker-container{
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    .start-date-picker {
+      label{
+        font-size: 0 !important;
+      }
+      color:transparent;
+      font-size: 0;
+      border-radius: 4px;
+      border-top: 1px solid #EBEBEB;
+      border-left: 1px solid #EBEBEB;
+      border-bottom: 1px solid #EBEBEB;
+      border-radius: 2px !important;
+    }
+    .end-date-picker {
+      label {
+        font-size: 0 !important;
+      }
+      color:transparent;
+      font-size: 0;
+      border-radius: 4px;
+      border-top: 1px solid #EBEBEB;
+      border-right: 1px solid #EBEBEB;
+      border-bottom: 1px solid #EBEBEB;
+      border-radius: 2px !important;
+    }
+  }
+
+  .bookings-listing-price{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
+    font-weight: bolder;
+    .price-per-day{
+      padding-left: 1%;
+      font-weight: bold;
+      font-size: xx-small;
+    }
+  }
 }
 
-.box-submit{
+.guests-button-container{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  .guests-val{
+    border: none;
+    text-align: center;
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+  }
+  .guests-label{
+    padding-top: 2px;
+    padding-right: 20px;
+  }
+  .guest-button {
+    font-weight: lighter;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1rem;
+    color: #008489;
+    display: inline-block;
+    border: 2px solid #008489;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }.guest-button:hover{
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 4px,
+    rgb(113, 113, 113) 0px 0px 0px 5px,
+    rgba(255, 255, 255, 0.5) 0px 0px 0px 6px;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease 0s;
+  }
+  .guest-val-container{
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    width: 80%;
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  // .butt-animation:hover {
+  //   position: absolute;
+  //   z-index: 3;
+  //   box-shadow: rgb(255, 255, 255) 0px 0px 0px 4px,
+  //               rgb(113, 113, 113) 0px 0px 0px 5px,
+  //               rgba(255, 255, 255, 0.5) 0px 0px 0px 6px; 
+  //   border-radius: 50%;
+  //   transition: box-shadow 0.2s ease 0s;
+  // }
+
+}
+
+.button-submit{
   border: 0px none;
+  border-radius: 4px;
   background: #ff5a5f;
   width: 100%;
   padding-left: 22px;
