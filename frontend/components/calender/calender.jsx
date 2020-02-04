@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/initialize';
 
-export const DatePickerWrapper = () => {
-  const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
+export const DatePickerWrapper = ({start, end}) => {
+  const [startDate, setStartDate] = useState(start);
+  const [endDate, setEndDate] = useState(end);
   const [focused1, setFocused1] = useState(false);
   const [focused2, setFocused2] = useState(false);
+
+  
   return(
     <div className='date-picker-container'>
       <div className='start-date-picker'>

@@ -12,19 +12,35 @@ import moment from 'moment';
 export const Bookings = ({listings}) => {
   const dispatch = useDispatch();
   const currUser = useSelector(state => state.session.id);
-  const [startDate, endDate] = useSelector(state => {
-    console.log(state)
-    return ([state.startDate, state.endDate]);
+  const [ inputs, setInputs ] = useState  ({
+    startDate: null,
+    endDate: null,
+    guests: 1,
   })
-  const [guests, setGuests] = useState(1);
-  const [price, setPrice] = useState(null)
-  
 
   const newBooking = (booking) => {
     dispatch(createBooking(booking))
   };
+
+  const handleInputChange = e => {
+    e.persist()
+    console.log(e)
+    
+    setInputs(inputs => {
+      console.log(inputs)
+      return ({ ...inputs, [e.target.name]: e.target.value });
+    });
+  }
+
+  const handleButtonChange = e => {
+    setState(prevState => {
+      return{
+        ...prevState, ...updatedValues
+      }
+    } )
+  }
   
-  console.log(guests)
+  
   return(
     <div className="bookings-container">
       <div className="bookings-listing-price">
@@ -33,7 +49,7 @@ export const Bookings = ({listings}) => {
       <div className="border"></div>
       <form onSubmit={newBooking}>
         <label className="date-label">Dates </label>
-        <DatePickerWrapper/>
+        <DatePickerWrapper dates={inputs.startDate, inputs.endDate}/>
         <div className="booking-dates-container">
 
         </div>
@@ -41,13 +57,22 @@ export const Bookings = ({listings}) => {
         <label className='guest-label'>Guests </label>
           <div className="guests-button-container">
             <div className="butt-animation">
-              <button className="guest-button"> <FontAwesomeIcon icon={faPlus}/> </button>
+              <button className="guest-button" onClick={e => {
+                  e.preventDefault();
+                  parseInt(inputs.guests) + 1; 
+                  
+                }
+            } onChange={handleButtonChange}> <FontAwesomeIcon icon={faPlus}/> </button>
             </div>
             <div className="guest-val-container">
-              <input type='number' defaultValue={guests} className="guests-val"></input><p className="guests-label">Guest(s)</p>
+              <input type='number' name="guests" onChange={handleInputChange}  value={inputs.guests} className="guests-val"></input><p className="guests-label">Guest(s)</p>
             </div>
             <div className="butt-animation">
-              <button className="guest-button"> <FontAwesomeIcon icon={faMinus} /> </button>
+            <button className="guest-button" name="guests" onClick={e => {
+                e.preventDefault();
+                parseInt(inputs.guests) - 1;
+            }} onChange={handleButtonChange}
+            > <FontAwesomeIcon icon={faMinus} /> </button>
             </div>
           </div>
           {/* logic to handle pricing */}
