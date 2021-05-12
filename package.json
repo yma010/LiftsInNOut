@@ -14,7 +14,7 @@
     "babel-loader": "^8.0.6",
     "circular-std": "^1.0.3",
     "lodash": "^4.17.19",
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "moment": "^2.24.0",
     "nuka-carousel": "^4.6.2",
     "owl.carousel": "^2.3.4",
